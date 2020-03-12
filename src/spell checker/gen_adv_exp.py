@@ -149,7 +149,7 @@ def run_exp(sess, model, texts, targets, csv_filename):
                     objective = objective1 + objective2
                 else:
                     objective = 0
-                    print 'Invalid input.  0 for objective1, 1 for objective2, 2 for objective1 + objective2'
+                    print('Invalid input.  0 for objective1, 1 for objective2, 2 for objective1 + objective2')
                 print("getting grads: ")
                 grads = tf.gradients(objective, model.input_embedding)
                 grads_value = sess.run(grads,

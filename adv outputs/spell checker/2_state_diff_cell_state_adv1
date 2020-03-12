@@ -1,0 +1,454 @@
+The vocabulary contains 78 characters.
+[' ', '!', '"', '$', '&', "'", ',', '-', '.', '/', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', ':', ';', '<EOS>', '<GO>', '<PAD>', '?', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+('enc_output: ', (<tf.Tensor 'RNN_Encoder_Cell_2D/encoder_0/bidirectional_rnn/fw/fw/transpose:0' shape=(?, ?, 1024) dtype=float32>, <tf.Tensor 'RNN_Encoder_Cell_2D/encoder_0/ReverseSequence:0' shape=(?, ?, 1024) dtype=float32>))
+('each output: ', <tf.Tensor 'RNN_Encoder_Cell_2D/encoder_0/bidirectional_rnn/fw/fw/transpose:0' shape=(?, ?, 1024) dtype=float32>)
+('each output: ', <tf.Tensor 'RNN_Encoder_Cell_2D/encoder_0/ReverseSequence:0' shape=(?, ?, 1024) dtype=float32>)
+('enc_output: ', (<tf.Tensor 'RNN_Encoder_Cell_2D/encoder_1/bidirectional_rnn/fw/fw/transpose:0' shape=(?, ?, 1024) dtype=float32>, <tf.Tensor 'RNN_Encoder_Cell_2D/encoder_1/ReverseSequence:0' shape=(?, ?, 1024) dtype=float32>))
+('each output: ', <tf.Tensor 'RNN_Encoder_Cell_2D/encoder_1/bidirectional_rnn/fw/fw/transpose:0' shape=(?, ?, 1024) dtype=float32>)
+('each output: ', <tf.Tensor 'RNN_Encoder_Cell_2D/encoder_1/ReverseSequence:0' shape=(?, ?, 1024) dtype=float32>)
+('csv_filename=', '2_state_diff_cell_state_adv_1572619873.csv')
+('  Input Words: ', 'The fwirst dys of her existencde in tthe country were veyr hard for Dolly. ')
+  Original Response Words: The first do so her existenced in the countr were vere hard for Dloll yol
+('pairs: ', [['fwirst', 'first'], ['tthe', 'the'], ['veyr', 'her']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: The wwirst dys of her existencde in tthe country were veyr hard for Dolly. 
+  Response Words: The wirst do so her existenced in the countr were vere hard for Dloll yol
+
+('cell_state_c_adv:', array([0.02290145, 0.15988026, 0.45287024, 0.15752378, 0.02204165]))
+('  Input Words: ', 'Most people think computers will neverb e able to think. ')
+  Original Response Words: /ost people think computers will never be able to think o
+('pairs: ', [['neverb', 'never']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Most people think computers will oeverb e able to think. 
+  Response Words: /ost people think computers will over think computers wil
+
+('cell_state_c_adv:', array([0.02638842, 0.22402556, 0.55806301, 0.22110118, 0.02521548]))
+('  Input Words: ', 'How can video games inspire us to make better papliycations for e-learinng? ')
+  Original Response Words: How can vide games inspire us to make better paplications for e-learing apl
+('pairs: ', [])
+('  Input Words: ', "I'm not good qat multitasking. ")
+  Original Response Words: Iim' not good at multitasking 
+('pairs: ', [['qat', 'at']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: I'm not good qit multitasking. 
+  Response Words: Iim' not good it multitasking 
+
+('cell_state_c_adv:', array([0.02830439, 0.25223442, 0.59035326, 0.2504299 , 0.02718984]))
+('  Input Words: ', 'The Great Dane is a breed of domestic dog known for itsg iant size. ')
+  Original Response Words: The Great Dane is a breed of domestic dog known for its int size.
+('pairs: ', [['itsg', 'its']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 53)
+('first index:', 52)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 54)
+('first index:', 52)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 55)
+('first index:', 52)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 52)
+('first index:', 52)
+  Adversarial Input Words: The Great Dane is a breed of domestic dog known for itsi iant size. 
+  Response Words: The Great Dane is a breed of domestic dog known for its int size.
+
+('cell_state_c_adv:', array([0.03281038, 0.30166759, 0.64203677, 0.30073879, 0.0317542 ]))
+('  Input Words: ', 'Everybody knows the moon is made of hceese. ')
+  Original Response Words: Everyody knows the moon is made of cheeses e
+('pairs: ', [])
+('  Input Words: ', "I don't sepak Catalan. ")
+  Original Response Words: In don' sepak Catalan a
+('pairs: ', [])
+('  Input Words: ', 'Man is kind enough wher he is not exicted by religion. ')
+  Original Response Words: /an is kind enough wher he is not exicted be religion a
+('pairs: ', [])
+('  Input Words: ', 'None of us can be asg reat as God, but an of us can be as good. ')
+  Original Response Words: None of us can be as reat as God, but an of us can be as good but
+('pairs: ', [['asg', 'as']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 18)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 19)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 20)
+('first index:', 20)
+  Adversarial Input Words: None of us can be a"g reat as God, but an of us can be as good. 
+  Response Words: None of us can be a" reat as God, but an of us can be as good but
+
+('cell_state_c_adv:', array([0.03674316, 0.33634617, 0.66948136, 0.33476456, 0.03529424]))
+('  Input Words: ', 'Never knew before what eternity was maade for. ')
+  Original Response Words: Never knew before what eternit was made for at
+('pairs: ', [['maade', 'made']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Never knew before what eternity was maadp for. 
+  Response Words: Never knew before what eternit was madap for a
+
+('cell_state_c_adv:', array([0.03851584, 0.35360054, 0.68207052, 0.35269298, 0.0371996 ]))
+('  Input Words: ', 'It is to give some f us a chance to learn German. ')
+  Original Response Words: It is to give some fous a chance to learn Germant o
+('pairs: ', [])
+('  Input Words: ', 'How charmed I wam when I overhear a German word which I undrerstand! ')
+  Original Response Words: How charmed Ia wam when I over hear a German word which I undrersta
+('pairs: ', [])
+('  Input Words: ', 'The Germanzs have an inhuman way of cutting up thir verbs. ')
+  Original Response Words: The Germanzs have an inhuman was of cutting up thir verbs b
+('pairs: ', [])
+('  Input Words: ', "Now  averb has a hard tiume enough of it in thigs world when it's all together. ")
+  Original Response Words: Now aver has a hard time enough of it in this world when it' sall together he 
+('pairs: ', [['tiume', 'time'], ['thigs', 'this']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 25)
+('first index:', 24)
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Now averb has a hard tium- enough of it in thigs world when it's all together. 
+  Response Words: Now aver has a hard tim- enough of it in this world when it' sall together the
+
+('cell_state_c_adv:', array([0.04490065, 0.39439326, 0.73664126, 0.39271612, 0.04323943]))
+('  Input Words: ', "But that's juwst what those Giermans do. ")
+  Original Response Words: But that' just what those Girmans do wa
+('pairs: ', [['juwst', 'just']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: But that's juwlt what those Giermans do. 
+  Response Words: But that' juwlut what those Girmans do 
+
+('cell_state_c_adv:', array([0.0463761 , 0.40434995, 0.74299423, 0.40193508, 0.04518725]))
+('  Input Words: ', "If the man doesn't believen as we do, we say he is a crank,j and that setttles it. ")
+  Original Response Words: If the man doesn' believen as we do, we say he is a crank,, and that settles it 
+('pairs: ', [['setttles', 'settles']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: If the man doesn't believen as we do, we say he is a crank,j and that 6etttles it. 
+  Response Words: If the man doesn' believen as we do, we say he is a crank,, and that tettles it.
+
+('cell_state_c_adv:', array([0.05267599, 0.44284456, 0.79119608, 0.44071629, 0.05257515]))
+('  Input Words: ', "I mean, it does nowadays, because now we can't bur nim. ")
+  Original Response Words: Ie man it does nowadas,, because now we can' bur nim at b
+('pairs: ', [])
+('  Input Words: ', "Maybe I shouldn't tell you this, bmurt I am truly memserized by your beauty. ")
+  Original Response Words: /abe Ie shouldnet tell you this burt I am trul me meserized yh your beaut y
+('pairs: ', [])
+('  Input Words: ', 'It was a pleasure to spend the evening wtih a smart, funny and beautiful grl like you. ')
+  Original Response Words: It was a pleasure to spend the evening with a smart, funn and beautiful grle like your a
+('pairs: ', [['wtih', 'with']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: It was a pleasure to spend the evening wsih a smart, funny and beautiful grl like you. 
+  Response Words: It was a pleasure to spend the evening wish a smart, funn and beautiful grle like your a
+
+('cell_state_c_adv:', array([0.05838676, 0.48020869, 0.83689814, 0.47741699, 0.05872113]))
+('  Input Words: ', 'No words can express how amazing yuo are. ')
+  Original Response Words: No words can express how amazing yuo are a
+('pairs: ', [])
+('  Input Words: ', "It's rare to meet nice people like yo.u ")
+  Original Response Words: Iit' sare to meet nice people like yoo u
+('pairs: ', [])
+('  Input Words: ', 'There issomething very ahrmig about you. ')
+  Original Response Words: There issomething ver yharmig about yours yo
+('pairs: ', [])
+('  Input Words: ', "It'st he first time in my life I'ev felt so connected with someone. ")
+  Original Response Words: It' st he first time in mo life Ieve felt so connected with someone.
+('pairs: ', [])
+('  Input Words: ', 'I would swim through theoocean just to see your smile again. ')
+  Original Response Words: I would swim through the ocean just to see your smile again.
+('pairs: ', [['theoocean', 'ocean']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: I would swim through theooGean just to see your smile again. 
+  Response Words: I would swim through the oGean just to see your smile again.
+
+('cell_state_c_adv:', array([0.0601329 , 0.49005923, 0.84206225, 0.48660411, 0.06037704]))
+('  Input Words: ', "You uknow I'd do anything for your beautiful eyes. ")
+  Original Response Words: You know Ind do anything for your beautiful eyess 
+('pairs: ', [['uknow', 'know']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 8)
+('first index:', 7)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 4)
+('first index:', 7)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 5)
+('first index:', 7)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 6)
+('first index:', 7)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 7)
+('first index:', 7)
+  Adversarial Input Words: You uk;ow I'd do anything for your beautiful eyes. 
+  Response Words: You kus; Iow; Iid do anything for your beautiful e
+
+('cell_state_c_adv:', array([0.06154467, 0.49838124, 0.84564474, 0.4945546 , 0.06182596]))
+('  Input Words: ', "The sound of yur voice islike siren's songto me. ")
+  Original Response Words: The sound of yur voice is like siren' song to me so 
+('pairs: ', [['islike', 'like'], ['songto', 'song']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 27)
+('first index:', 26)
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: The sound of yur voice islile siren's songto me. 
+  Response Words: The sound of yur voice is lile siren' song to me so 
+
+('cell_state_c_adv:', array([0.06282906, 0.50558339, 0.84820822, 0.50130562, 0.06311035]))
+('  Input Words: ', 'Tatoba: Becas ea lqanguage is more than the sum of its words. ')
+  Original Response Words: Tatoba: Becas eal language is more than the sum of its words wo
+('pairs: ', [['lqanguage', 'language']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 21)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 22)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 23)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 24)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 25)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 17)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 18)
+('first index:', 20)
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Tatoba: Becas ea lAanguage is more than the sum of its words. 
+  Response Words: Tatoba: Becas ealA anguage is more than the sum of its words wo
+
+('cell_state_c_adv:', array([0.06458581, 0.51344896, 0.85124936, 0.50886337, 0.06509532]))
+('  Input Words: ', 'iFnd multilingual sentence mequiuvalenst at Tatoeba. org. ')
+  Original Response Words: Find multiling ual sentence me Luivalenst at Tatorbat or
+('pairs: ', [['iFnd', 'Find']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: iFna multilingual sentence mequiuvalenst at Tatoeba. org. 
+  Response Words: Fin a multiling ual sentence me Luivalenst at Tatorbat o
+
+('cell_state_c_adv:', array([0.06663978, 0.52202573, 0.85352624, 0.51693593, 0.06789763]))
+('  Input Words: ', 'Ukraine is a country bin Central and Eastern Europe. ')
+  Original Response Words: U raine is a countr bin Central and Eastern Eropes a
+('pairs: ', [])
+('  Input Words: ', 'kUaine became independent againwhen the Soviet Union dissolved in 1991r. ')
+  Original Response Words: U aine became indeendent again when the Soviet Union dissolved in 9999r.
+('pairs: ', [['againwhen', 'again']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: kUaine became independent agaNnwhen the Soviet Union dissolved in 1991r. 
+  Response Words: U aine became indeendent agan when the Soviet Union dissolved in 999r.
+
+('cell_state_c_adv:', array([0.06876805, 0.53398862, 0.85896633, 0.52916419, 0.07053541]))
+('  Input Words: ', 'The Great Jerboa is a cspecies ofrodent. ')
+  Original Response Words: The Great Jerboa is a cospecies ofrodent 
+('pairs: ', [])
+('  Input Words: ', 'I contend that we are both atheists. I just believe in one fewer gdo than you do. ')
+  Original Response Words: In contend that we are both atheistss IK just believe in one fewer do than you do 
+('pairs: ', [['gdo', 'do']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: I contend that we are both atheists. I just believe in one fewer gdt than you do. 
+  Response Words: In contend that we are both atheistss IK just believe in one fewer dit than you do
+
+('cell_state_c_adv:', array([0.07087508, 0.54681662, 0.86550505, 0.54226287, 0.07290782]))
+('  Input Words: ', 'Biologists view txhe chupacabras as a ocntemporary legend. ')
+  Original Response Words: Biologists view the chupacabras as a contemporar legend al
+('pairs: ', [['txhe', 'the']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Biologists view txhc chupacabras as a ocntemporary legend. 
+  Response Words: Biologists view the chupacabras as a contemporar legend.
+
+('cell_state_c_adv:', array([0.07284413, 0.55381709, 0.86658246, 0.54968262, 0.07517408]))
+('  Input Words: ', "I don't speak Turinsh. ")
+  Original Response Words: In don' speak Turinsh a
+('pairs: ', [])
+('  Input Words: ', 'The literal ranslation foer the Spanish wordd "chupacabra" is "goat sucker. "')
+  Original Response Words: The literal ranslation fore the Sanish wordd "uchuparaba" is goat sucker.
+('pairs: ', [])
+('  Input Words: ', 'History does not repeat itself, but it does ryme. ')
+  Original Response Words: Histor does not repeat itself but it does remes yre
+('pairs: ', [])
+('  Input Words: ', 'Get the facts first. Yxou can distort them later. ')
+  Original Response Words: G the facts first You can distort them later ther
+('pairs: ', [['Yxou', 'You']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 21)
+('first index:', 24)
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Get the facts first. uxou can distort them later. 
+  Response Words: G the facts first ux ou can distort them later th
+
+('cell_state_c_adv:', array([0.07376231, 0.55681577, 0.86717158, 0.55261761, 0.07601265]))
+('  Input Words: ', "I don'ot jspeak Ukrainian. ")
+  Original Response Words: In don' jot jeak U kraini
+('pairs: ', [])
+('  Input Words: ', "It' snationafl tell-a-lie day! And yes, I made that up. ")
+  Original Response Words: Int' sation all tell-a-lie day and yes, I made that up 
+('pairs: ', [])
+('  Input Words: ', "I don't think I wantt o see what a fqly considers paradise. ")
+  Original Response Words: In don' think I want to see what a fle considers paradise p
+('pairs: ', [['wantt', 'want']])
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 20)
+('first index:', 19)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 16)
+('first index:', 19)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 17)
+('first index:', 19)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 18)
+('first index:', 19)
+neuron selection
+getting grads: 
+('is generate: ', False)
+('new_step_index: ', 19)
+('first index:', 19)
+  Adversarial Input Words: I don't think I waDtt o see what a fqly considers paradise. 
+  Response Words: In don' think I watt of see what a fle considers paradise p
+
+('cell_state_c_adv:', array([0.07477072, 0.56061056, 0.86793054, 0.55651855, 0.07706883]))
+('  Input Words: ', 'Few things are harder to put up with thn the anmnoyance of a good example. ')
+  Original Response Words: Few things are harder to put up with the the anmonyance of a good example o
+('pairs: ', [['thn', 'the']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Few things are harder to put up with tan the anmnoyance of a good example. 
+  Response Words: Few things are harder to put up with tan the anmonyance of a good example o
+
+('cell_state_c_adv:', array([0.07606042, 0.56646463, 0.86951214, 0.5623567 , 0.07837976]))
+('  Input Words: ', 'Tom called me a partypooper because I lef tthe party just afpter midnight. ')
+  Original Response Words: Tom called me a partooper because Ie lef the part just after midnight.
+('pairs: ', [['tthe', 'the'], ['afpter', 'after']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Tom called me a partypooper because I lef tthj party just afpter midnight. 
+  Response Words: Tom called me a partyooper because Ie left that part just after midnight.
+
+('cell_state_c_adv:', array([0.07799231, 0.57416568, 0.8711309 , 0.56990914, 0.0802002 ]))
+('  Input Words: ', 'Science builds planes and skyscrapers, but faith bring sthem togethe. ')
+  Original Response Words: Sicence builds planes and skescrapers but faith bring sthem together th
+('pairs: ', [['togethe', 'together']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Science builds planes and skyscrapers, but faith bring sthem toge3he. 
+  Response Words: Sicence builds planes and skescrapers but faith bring sthem toge3her he
+
+('cell_state_c_adv:', array([0.07894234, 0.57973314, 0.87241529, 0.57578974, 0.08128291]))
+('  Input Words: ', 'Science flies you to the moon. Religion flies you into ubildings. ')
+  Original Response Words: Sicence flies you to the moon Religion flies you into bildings in 
+('pairs: ', [])
+('  Input Words: ', 'He is a mutton-headed lod mugwum.p ')
+  Original Response Words: Hhe is a mutton-headed lod mugum.
+('pairs: ', [])
+('  Input Words: ', 'Slowly but surely English is losig importnace in Europe. ')
+  Original Response Words: Sowlow but sure Elish is losig importnace in Europe.
+('pairs: ', [])
+('  Input Words: ', 'I have never seen a compelling argumnet for religion. ')
+  Original Response Words: I have never seen a compelling argumnet for religion a
+('pairs: ', [])
+('  Input Words: ', 'Youq know nothing, Tom Jackson. ')
+  Original Response Words: You know nothing Tom Jackson so
+('pairs: ', [['Youq', 'You']])
+neuron selection
+getting grads: 
+('is generate: ', True)
+  Adversarial Input Words: Yonq know nothing, Tom Jackson. 
+  Response Words: Yon know nothing Tom Jackson so
+
+('cell_state_c_adv:', array([0.07917587, 0.58175526, 0.87305218, 0.57800824, 0.08155358]))
+('  Input Words: ', 'A Jackson alwayspays his devbts. ')
+  Original Response Words: A Jackson alwaspaspas his devbts 
+('pairs: ', [])
+('  Input Words: ', 'We moved the projetc to a new server. ')
+  Original Response Words: We moved the projetc to a new server t
+('pairs: ', [])
+('success_rate: ', 0.7916666666666666)
+save success
+('Run time: ', 214.903198)
+save 2_state_diff_cell_state_adv_1572619873.csvsuccessfully

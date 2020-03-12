@@ -1,0 +1,851 @@
+('csv_filename=', '2_state_diff_hidden_state_adv_1555410266.csv')
+<tf.Variable 'model/embedding:0' shape=(10000, 200) dtype=float32_ref>
+<tf.Variable 'model/rnn/multi_rnn_cell/cell_0/basic_lstm_cell/kernel:0' shape=(400, 800) dtype=float32_ref>
+<tf.Variable 'model/rnn/multi_rnn_cell/cell_0/basic_lstm_cell/bias:0' shape=(800,) dtype=float32_ref>
+<tf.Variable 'model/softmax_w:0' shape=(200, 10000) dtype=float32_ref>
+<tf.Variable 'model/softmax_b:0' shape=(10000,) dtype=float32_ref>
+testing
+model_checkpoint_path: "ckpt/model.ckpt-13"
+all_model_checkpoint_paths: "ckpt/model.ckpt-9"
+all_model_checkpoint_paths: "ckpt/model.ckpt-10"
+all_model_checkpoint_paths: "ckpt/model.ckpt-11"
+all_model_checkpoint_paths: "ckpt/model.ckpt-12"
+all_model_checkpoint_paths: "ckpt/model.ckpt-13"
+
+('------Step ', 0, '-------')
+('ori_sequences: ', [['no', 'it', 'was', "n't", 'black', 'monday', '<eos>', 'but', 'while', 'the']])
+('next_batch_sequences: ', array([['economy', 'goes', 'forward', 'on', 'behalf', 'of', 'rape',
+        'incest', 'than', 'women']], dtype='|S7'))
+('ori_samples: ', [['fact', 'that', 'the', 'bank', 'is', 'worth', 'particularly', 'inadequate', '<eos>', 'by', 'the', 'federal', 'reserve', 'the', '<unk>', 'move', 'toward', 'groups', 'of', 'which', 'mr.', 'gillett', 'and', 'his', 'predecessor', 'have', 'been', 'called', 'was', 'in']])
+('adv_sequences: ', [['no', 'it', 'first', "n't", 'black', 'monday', '<eos>', 'but', 'while', 'the']])
+('is generate', True)
+('x: ', array([[102,  14,  24,  32, 754, 382,   2,  29, 120,   0]], dtype=int32), 'x_prime: ', array([[102,  14,  74,  32, 754, 382,   2,  29, 120,   0]], dtype=int32))
+('next_adv_batch_sequences = ', array([['economy', 'goes', 'forward', 'on', 'behalf', 'of', 'rape',
+        'incest', 'than', 'women']], dtype='|S7'))
+('samples after adversarial attacks: ', [['officials', '<unk>', 'rely', 'on', 'the', 'earthquake', 'he', 'said', '<eos>', 'but', 'the', 'official', '<unk>', 'said', 'the', 'weaknesses', 'in', 'the', 'case', 'is', 'slated', 'to', 'reach', 'an', 'annual', 'worse', 'return', 'on', 'productivity', 'of']])
+('hidden_state_c_1:', 0.005)
+('------Step ', 1, '-------')
+('ori_sequences: ', [['new', 'york', 'stock', 'exchange', 'did', "n't", 'fall', 'apart', 'friday', 'as']])
+('next_batch_sequences: ', array([['usual', '#', '300-a-share', 'bid', 'earned', '$', 'N',
+        'million', 'owed', 'by']], dtype='|S11'))
+('ori_samples: ', [['part', 'of', 'a', 'financial', 'monetary', 'policy', 'for', 'all', 'britain', "'s", 'industrial', 'oil', 'and', 'asbestos', 'group', '<eos>', 'most', 'commuters', 'in', 'the', '<unk>', 'of', 'the', 'network', 'who', 'had', 'sales', 'of', '$', 'N']])
+('adv_sequences: ', [['new', 'york', 'stock', 'exchange', 'did', "n't", 'fall', 'moody', 'friday', 'as']])
+('is generate', True)
+('x: ', array([[  35,   92,   60,  111,  143,   32,  618, 3221,  282,   19]],
+      dtype=int32), 'x_prime: ', array([[ 35,  92,  60, 111, 143,  32, 618, 994, 282,  19]], dtype=int32))
+('next_adv_batch_sequences = ', array([['milestones', 'of', 'datapoint', 'corp.', 'subsidiary', 'motor',
+        'co.', 'over', 'whether', 'state']], dtype='|S10'))
+('samples after adversarial attacks: ', [['measured', 'by', 'continued', 'lower', 'wages', 'in', 'the', 'european', 'community', '<eos>', 'they', 'reacting', 'to', 'the', 'u.s.', 'the', 'uncertainty', 'yesterday', '<eos>', 'the', 'new', 'argument', 'for', 'the', 'budget', 'process', 'may', 'require', 'any', 'evidence']])
+('hidden_state_c_1:', 0.01)
+('------Step ', 2, '-------')
+('ori_sequences: ', [['the', 'dow', 'jones', 'industrial', 'average', 'plunged', 'N', 'points', 'most', 'of']])
+('next_batch_sequences: ', array([['them', 'ago', 'ago', 'do', "n't", 'specify', 'why',
+        'industries', 'corp.', 'minneapolis']], dtype='|S11'))
+('ori_samples: ', [['the', 'day', 'because', 'the', 'u.s.', 'remains', 'anticipated', '<eos>', 'they', 'yielded', 'less', 'than', 'her', 'right', 'to', '<unk>', '<eos>', 'according', 'to', 'one', 'person', 'close', 'mr.', 'sears', 'founded', 'a', 'mandate', 'from', 'the', 'fund']])
+('adv_sequences: ', [['the', 'dow', 'prime', 'industrial', 'average', 'plunged', 'N', 'points', 'most', 'of']])
+('is generate', True)
+('x: ', array([[   0,  447,  458,  438,  196, 1603,    3,  394,   90,    4]],
+      dtype=int32), 'x_prime: ', array([[   0,  447,  952,  438,  196, 1603,    3,  394,   90,    4]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['them', 'ago', 'ago', 'do', "n't", 'specify', 'why',
+        'industries', 'corp.', 'minneapolis']], dtype='|S11'))
+('samples after adversarial attacks: ', [['them', 'in', 'general', 'motors', "'s", 'urge', 'to', 'make', 'the', 'administration', 'under', 'the', 'sanctions', '<eos>', 'with', 'first', 'refusal', 'boasts', 'is', 'a', 'richer', '$', 'N', 'range', 'for', 'today', 'that', 'would', 'bring', 'the']])
+('hidden_state_c_1:', 0.015)
+('------Step ', 3, '-------')
+('ori_sequences: ', [['it', 'in', 'the', 'final', 'hour', 'it', 'barely', 'managed', 'to', 'stay']])
+('next_batch_sequences: ', array([['out', 'about', 'them', "'", 'relationships', 'with',
+        'disabilities', 'act', 'usually', 'expire']], dtype='|S13'))
+('ori_samples: ', [['away', 'says', '<unk>', '<unk>', 'a', 'continued', 'fusion', '<unk>', '<eos>', 'you', 'ca', "n't", 'change', 'the', 'markets', 'they', 'do', "n't", 'move', 'up', 'for', 'the', 'top', 'of', 'life', 'insurance', '<eos>', 'we', "'re", 'not']])
+('adv_sequences: ', [['it', 'in', 'the', 'final', 'hour', 'it', 'barely', 'managed', 'to', 'net']])
+('is generate', True)
+('x: ', array([[  14,    7,    0, 1110, 1476,   14, 3160, 1854,    5, 1332]],
+      dtype=int32), 'x_prime: ', array([[  14,    7,    0, 1110, 1476,   14, 3160, 1854,    5,  135]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['income', 'especially', 'though', 'year', 'october', 'N', 'yen',
+        'sept.', 'N', 'francs']], dtype='|S10'))
+('samples after adversarial attacks: ', [['asset', 'and', 'any', 'other', 'black', 'branches', 'using', 'it', 'unless', 'the', 'dollar', 'force', 'will', 'be', 'supportive', 'of', 'the', 'soviet', 'treaty', '<eos>', 'engineers', 'want', 'the', 'ministers', 'to', 'block', '<unk>', '<eos>', 'according', 'to']])
+('hidden_state_c_1:', 0.02)
+('------Step ', 4, '-------')
+('ori_sequences: ', [['this', 'side', 'of', 'chaos', '<eos>', 'some', 'circuit', 'breakers', 'installed', 'after']])
+('next_batch_sequences: ', array([['hurricane', 'hugo', 'ii', 'night', 'than', 'double', 'market',
+        'makers', 'said', 'william']], dtype='|S9'))
+('ori_samples: ', [['the', 'development', 'itself', 'is', '<unk>', 'in', 'lawyer', 'for', 'urban', 'food', 'and', 'utilities', '<eos>', 'i', 'certainly', 'let', 'me', 'themselves', 'listed', 'on', 'their', 'mail', 'it', 'will', 'be', 'too', 'ignoring', 'and', 'most', 'of']])
+('adv_sequences: ', [['this', 'much', 'of', 'chaos', '<eos>', 'some', 'circuit', 'breakers', 'installed', 'after']])
+('is generate', True)
+('x: ', array([[  39, 1077,    4, 7211,    2,   57, 2198, 5021, 3801,   78]],
+      dtype=int32), 'x_prime: ', array([[  39,  121,    4, 7211,    2,   57, 2198, 5021, 3801,   78]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['hurricane', 'hugo', 'ii', 'night', 'than', 'double', 'market',
+        'makers', 'said', 'william']], dtype='|S9'))
+('samples after adversarial attacks: ', [['retreating', 'in', 'to', 'inflation', 'in', 'new', 'taxes', '<eos>', 'but', 'according', 'to', 'a', 'former', 'analyst', 'started', 'at', 'quoted', 'ncr', 'corp.', 'said', 'in', 'a', 'statement', 'that', 'it', 'holds', 'control', 'major', 'retirement', 'approval']])
+('hidden_state_c_1:', 0.025)
+('------Step ', 5, '-------')
+('ori_sequences: ', [['the', 'october', 'N', 'crash', 'failed', 'their', 'first', 'test', 'traders', 'say']])
+('next_batch_sequences: ', array([['they', "'ve", 'been', 'able', 'to', 'cope', 'with', 'creditors',
+        'else', 'night']], dtype='|S9'))
+('ori_samples: ', [['it', 'would', 'create', 'a', 'product', 'competitive', '<eos>', 'the', 'ldp', 'does', "n't", 'provide', '<unk>', 'fees', 'for', 'opportunity', 'for', 'paul', 'delta', 'and', '<unk>', 'says', '<unk>', 'university', 'of', 'the', 'manufacturing', 'business', 'were', 'interviewed']])
+('adv_sequences: ', [['the', 'october', 'N', 'crash', 'failed', 'their', 'first', 'test', 'traders', 'most']])
+('is generate', True)
+('x: ', array([[   0,  521,    3, 1040,  777,   51,   74,  894,  280,  117]],
+      dtype=int32), 'x_prime: ', array([[   0,  521,    3, 1040,  777,   51,   74,  894,  280,   90]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['likely', 'be', 'able', 'to', 'retire', 'taxes', 'where', 'you',
+        "'re", 'going']], dtype='|S6'))
+('samples after adversarial attacks: ', [['effectively', 'but', 'the', 'public', 'had', 'explained', 'over', 'the', 'past', 'three', 'days', 'the', 'compromise', 'says', '<eos>', 'the', 'company', 'based', 'in', 'miami', 'has', 'been', 'found', 'to', 'conform', '<eos>', 'lang', '<unk>', 'from', 'the']])
+('hidden_state_c_1:', 0.0295)
+('------Step ', 6, '-------')
+('ori_sequences: ', [['unable', 'to', 'cool', 'the', 'selling', 'panic', 'in', 'both', 'stocks', 'and']])
+('next_batch_sequences: ', array([['operates', 'loans', 'inc', "'s", 'offering', 'value', 'of', '$',
+        '300-a-share', 'face']], dtype='|S11'))
+('ori_samples: ', [['thus', 'growing', 'control', 'of', 'the', 'copper', 'commission', '<eos>', 'the', 'flight', "'s", 'earthquake', 'represented', 'the', 'ratio', 'of', 'saul', '<unk>', 'and', '<unk>', 'observers', '<eos>', 'the', 'guards', 'on', 'the', 'case', 'of', 'alternative', '<unk>']])
+('adv_sequences: ', [['unable', 'to', 'cool', 'the', 'selling', 'panic', 'in', 'both', 'stocks', 'anyone']])
+('is generate', True)
+('x: ', array([[2259,    5, 4197,    0,  399, 3912,    7,  179,  149,    8]],
+      dtype=int32), 'x_prime: ', array([[2259,    5, 4197,    0,  399, 3912,    7,  179,  149, 1452]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['say', 'nobody', 'knows', 'how', 'much', 'money', 'manager',
+        'richard', 'icahn', 'proposed']], dtype='|S8'))
+('samples after adversarial attacks: ', [['<eos>', 'one', 'award', 'is', 'a', 'small', 'special', 'political', 'crash', 'involving', '<unk>', '<unk>', '<eos>', 'says', 'david', 'williams', 'an', 'attorney', 'for', 'drexel', 'has', 'faced', 'the', 'mistake', '<eos>', 'he', 'also', 'said', 'the', 'athletics']])
+('hidden_state_c_1:', 0.0345)
+('------Step ', 7, '-------')
+('ori_sequences: ', [['futures', '<eos>', 'the', 'N', 'stock', 'specialist', 'firms', 'on', 'the', 'big']])
+('next_batch_sequences: ', array([['board', 'itself', 'else', 'change', 'your', 'actual', 'outlets',
+        'based', 'heavily', 'away']], dtype='|S7'))
+('ori_samples: ', [['brokerage', 'firms', 'brokers', 'up', 'little', 'right', 'prices', 'for', 'a', 'volunteer', 'for', 'their', 'personal', 'computer', '<eos>', 'but', 'my', 'prisons', 'could', 'do', 'forget', 'every', 'form', '<unk>', 'along', 'with', 'mr.', 'bush', "'", 'commitment']])
+('adv_sequences: ', [['futures', '<eos>', 'the', 'N', 'stock', 'specialist', 'firms', 'so', 'the', 'big']])
+('is generate', True)
+('x: ', array([[ 287,    2,    0,    3,   60, 2518,  365,   16,    0,  129]],
+      dtype=int32), 'x_prime: ', array([[ 287,    2,    0,    3,   60, 2518,  365,  105,    0,  129]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['blocks', 'of', 'rape', 'incest', 'be', 'able', 'to', 'send',
+        'them', 'worse']], dtype='|S6'))
+('samples after adversarial attacks: ', [['board', 'to', 'buy', 'back', 'in', 'N', '<eos>', 'in', 'baltimore', 'following', 'program', 'trading', 'to', 'be', 'the', 'little', 'to', 'say', 'it', "'s", 'only', 'the', 'kind', 'of', 'weakening', '<unk>', 'rather', 'than', 'kidney', 'fusion']])
+('hidden_state_c_1:', 0.0385)
+('------Step ', 8, '-------')
+('ori_sequences: ', [['board', 'floor', 'the', 'buyers', 'and', 'sellers', 'of', 'last', 'resort', 'who']])
+('next_batch_sequences: ', array([['participated', 'heavily', 'on', 'behalf', 'of', 'rape',
+        'incest', 'than', 'one-third', 'increases']], dtype='|S12'))
+('ori_samples: ', [['<unk>', 'about', 'the', 'premiums', 'of', 'the', 'networks', 'and', 'exchange', 'funds', 'for', 'about', 'twice', 'N', 'months', 'and', 'the', 'high', 'price', 'is', 'almost', 'N', 'times', 'not', 'a', 'market', 'any', 'quite', 'good', 'thing']])
+('adv_sequences: ', [['board', 'floor', 'the', 'buyers', 'and', 'whose', 'of', 'last', 'resort', 'who']])
+('is generate', True)
+('x: ', array([[ 146, 1013,    0,  845,    8, 2850,    4,   69, 3230,   56]],
+      dtype=int32), 'x_prime: ', array([[ 146, 1013,    0,  845,    8,  622,    4,   69, 3230,   56]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['participated', 'heavily', 'on', 'behalf', 'of', 'rape',
+        'incest', 'than', 'one-third', 'increases']], dtype='|S12'))
+('samples after adversarial attacks: ', [['have', 'complained', 'for', '<unk>', 'through', 'because', 'they', "'re", 'needed', 'test', 'says', 'richard', 'merksamer', 'chairman', 'of', '<unk>', 't.', '<unk>', '<eos>', 'each', 'year', 'after', 'just', 'about', 'N', '<unk>', 'and', 'half', 'of', 'the']])
+('hidden_state_c_1:', 0.04325)
+('------Step ', 9, '-------')
+('ori_sequences: ', [['were', 'criticized', 'after', 'the', 'N', 'crash', 'once', 'again', 'could', "n't"]])
+('next_batch_sequences: ', array([['comment', 'on', 'whether', 'necessary', 'to', 'practice',
+        'down', 'interest', 'expense', "'"]], dtype='|S9'))
+('ori_samples: ', [['be', 'reached', '<eos>', 'but', 'mr.', 'baker', 'is', 'a', 'deputy', 'chief', 'executive', 'and', 'its', 'president', 'n.j', '<eos>', 'this', 'figure', 'was', 'the', 'first', 'board', 'name', 'but', 'declared', 'that', 'in', 'the', 'way', 'we']])
+('adv_sequences: ', [['were', 'criticized', 'after', 'the', 'N', 'crash', 'once', 'again', 'could', 'san']])
+('is generate', True)
+('x: ', array([[  46, 3040,   78,    0,    3, 1040,  499,  555,   79,   32]],
+      dtype=int32), 'x_prime: ', array([[  46, 3040,   78,    0,    3, 1040,  499,  555,   79,  304]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['francisco', 'mayor', 'carlos', 'd.', 'rubicam', 'whom', 'she',
+        "'d", 'know', 'how']], dtype='|S9'))
+('samples after adversarial attacks: ', [['otherwise', 'not', 'independence', 'the', 'crop', 'corps', 'offered', 'an', 'economy', '<eos>', 'upon', 'all', '<unk>', 'development', 'lines', 'increased', 'N', 'N', 'in', 'september', 'to', 'N', 'N', 'from', 'N', 'N', 'annually', 'or', 'N', 'N']])
+('hidden_state_c_1:', 0.04775)
+('------Step ', 10, '-------')
+('ori_sequences: ', [['handle', 'the', 'selling', 'pressure', '<eos>', 'big', 'investment', 'banks', 'refused', 'to']])
+('next_batch_sequences: ', array([['disclose', 'certain', 'conditions', 'unless', 'hurricane',
+        'hugo', 'closed', 'unchanged', 'at', 'N']], dtype='|S10'))
+('ori_samples: ', [['comment', 'a', 'further', '<unk>', 'specialists', 'with', 'the', 'pension', 'fund', 'that', 'created', '<unk>', 'on', '<unk>', '<unk>', 'and', 'fame', '<eos>', 'he', 'sees', 'an', '<unk>', '<unk>', 'as', 'a', '<unk>', 'to', 'make', 'something', 'out']])
+('adv_sequences: ', [['handle', 'the', 'selling', 'pressure', '<eos>', 'big', 'priced', 'banks', 'refused', 'to']])
+('is generate', True)
+('x: ', array([[2434,    0,  399,  842,    2,  129,  145,  247, 2076,    5]],
+      dtype=int32), 'x_prime: ', array([[2434,    0,  399,  842,    2,  129,  424,  247, 2076,    5]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['disclose', 'alternatives', 'regarding', 'bankruptcy',
+        'proceedings', 'calif', '<eos>', 'moreover', 'unlike', 'average']],
+      dtype='|S12'))
+('samples after adversarial attacks: ', [['be', 'diluted', 'by', 'coupon', 'at', 'the', '$', 'N', 'bay', 'area', 'simultaneously', '<eos>', 'in', 'moscow', 'is', 'pulling', 'lately', 'by', '<unk>', 'to', 'his', 'listing', 'so', 'as', 'N', 'readily', 'themselves', '<eos>', 'well', 'expected']])
+('hidden_state_c_1:', 0.05175)
+('------Step ', 11, '-------')
+('ori_sequences: ', [['step', 'up', 'to', 'the', 'plate', 'to', 'support', 'the', 'beleaguered', 'floor']])
+('next_batch_sequences: ', array([['trading', 'days', 'ago', 'despite', 'rumors', 'that', 'brazil',
+        'will', 'announce', 'additional']], dtype='|S10'))
+('ori_samples: ', [['the', 'size', 'of', 'brokers', 'planned', 'to', 'rally', "'s", 'own', 'cost', 'of', '<unk>', 'and', '<unk>', '<unk>', 'told', 'satellite', '<unk>', 'who', 'battled', 'fiercely', 'out', 'of', 'a', 'original', '$', 'N', 'billion', 'bid', 'for']])
+('adv_sequences: ', [['step', 'up', 'to', 'the', 'bush', 'to', 'support', 'the', 'beleaguered', 'floor']])
+('is generate', True)
+('x: ', array([[1209,   52,    5,    0, 5286,    5,  414,    0, 9517, 1013]],
+      dtype=int32), 'x_prime: ', array([[1209,   52,    5,    0,  256,    5,  414,    0, 9517, 1013]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['operating', 'wage', 'including', 'instance', 'ii', 'co',
+        '<eos>', 'meanwhile', 'average', 'daily']], dtype='|S9'))
+('samples after adversarial attacks: ', [['<eos>', 'the', 'action', 'leader', 'will', 'just', 'drop', 'aggressively', 'if', 'their', 'diet', 'move', 'would', 'save', 'a', 'toll', 'on', 'days', '<eos>', 'her', '<unk>', 'hollywood', 'is', 'going', 'to', 'pass', 'the', 'country', 'through', 'my']])
+('hidden_state_c_1:', 0.05625)
+('------Step ', 12, '-------')
+('ori_sequences: ', [['traders', 'by', 'buying', 'big', 'blocks', 'of', 'stock', 'traders', 'say', '<eos>']])
+('next_batch_sequences: ', array([['meanwhile', 'painewebber', 'roebuck', '&', 'trecker', 'stock',
+        'days', 'cents', 'million', 'losses']], dtype='|S11'))
+('ori_samples: ', [['ual', "'s", '$', 'N', 'billion', 'volume', 'of', 'spirits', 'management', 'equity', '<eos>', 'this', 'greenspan', 'started', '<unk>', 'which', 'charles', 's.', '<unk>', 'is', "n't", '<unk>', 'on', 'a', '<unk>', '<unk>', 'and', '<unk>', 'would', 'have']])
+('adv_sequences: ', [['traders', 'by', 'buying', 'big', 'blocks', 'of', 'stock', 'traders', 'say', 'plans']])
+('is generate', True)
+('x: ', array([[ 280,   17,  360,  129, 4258,    4,   60,  280,  117,    2]],
+      dtype=int32), 'x_prime: ', array([[ 280,   17,  360,  129, 4258,    4,   60,  280,  117,  231]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['indicate', 'signs', 'else', 'might', 'challenge', 'shareholder',
+        'data', 'industries', 'inc', '<eos>']], dtype='|S11'))
+('samples after adversarial attacks: ', [['to', 'unveil', 'new', '<unk>', 'laundering', 'of', 'its', 'stations', 'and', '<unk>', 'of', 'a', '<unk>', 'on', 'the', 'contest', 'which', 'includes', 'gold', 'into', 'each', 'share', 'and', 'it', 'had', 'hoped', 'if', 'it', "'s", 'a']])
+('hidden_state_c_1:', 0.0605)
+('------Step ', 13, '-------')
+('ori_sequences: ', [['heavy', 'selling', 'of', 'standard', '&', 'poor', "'s", '500-stock', 'index', 'futures']])
+('next_batch_sequences: ', array([['contract', 'with', 'equity-purchase', 'warrants', 'indicating',
+        'strong', 'losses', 'ago', 'point', 'out']], dtype='|S15'))
+('ori_samples: ', [['trading', 'as', '<unk>', '<eos>', 'in', 'august', 'the', 'benchmark', 'no.', 'N', 'N', 'N', 'annual', 'rate', 'on', 'a', 'roll', 'basis', 'in', 'more', 'than', 'two', 'years', '<eos>', 'speaker', 'david', '<unk>', 'said', 'he', "'s"]])
+('adv_sequences: ', [['heavy', 'selling', 'among', 'standard', '&', 'poor', "'s", '500-stock', 'index', 'futures']])
+('is generate', True)
+('x: ', array([[ 770,  399,    4,  737,   82,  887,    9, 4047,  216,  287]],
+      dtype=int32), 'x_prime: ', array([[ 770,  399,  211,  737,   82,  887,    9, 4047,  216,  287]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['owned', 'by', 'dow', 'jones', 'capital', 'markets', 'report',
+        'ago', 'while', 'year-end']], dtype='|S8'))
+('samples after adversarial attacks: ', [['<eos>', 'bond', 'prices', 'put', 'heavily', 'about', 'hk$', 'N', 'this', 'year', '<eos>', 'the', 'japanese', 'government', 'will', 'have', 'as', 'serious', 'their', 'steel', 'to', 'any', 'further', 'plunge', 'than', 'they', 'had', 'a', 'drafted', 'response']])
+('hidden_state_c_1:', 0.06475)
+('------Step ', 14, '-------')
+('ori_sequences: ', [['in', 'chicago', '<unk>', 'beat', 'stocks', 'downward', '<eos>', 'seven', 'big', 'board']])
+('next_batch_sequences: ', array([['spokeswoman', 'noted', 'that', 'uncertainty', 'about',
+        'cooperation', 'corp.', 'minneapolis', 'calif.', 'biotechnology']],
+      dtype='|S13'))
+('ori_samples: ', [['observers', 'insisted', 'that', 'the', 'strikes', 'is', 'distributed', 'by', 'a', 'disaster', 'since', 'its', 'while', 'the', 'company', 'produced', 'the', 'railroad', 'net', 'impact', 'of', 'a', 'total', 'of', '$', 'N', 'billion', '<eos>', 'the', 'fasb']])
+('adv_sequences: ', [['in', 'chicago', '<unk>', 'beat', 'stocks', 'downward', '<eos>', 'seven', 'even', 'board']])
+('is generate', True)
+('x: ', array([[   7,  484,    1, 2815,  149, 2999,    2,  912,  129,  146]],
+      dtype=int32), 'x_prime: ', array([[   7,  484,    1, 2815,  149, 2999,    2,  912,  113,  146]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['official', 'noted', 'however', 'that', 'way', 'of', 'intent',
+        'to', 'protect', 'interests']], dtype='|S9'))
+('samples after adversarial attacks: ', [['funds', 'that', 'have', 'all', 'been', 'warning', 'up', 'the', 'internal', 'revenue', 'fund', '<eos>', 'also', 'many', 'people', 'were', 'concerned', 'their', 'positions', 'as', 'an', 'officer', 'for', 'borrowed', '<eos>', 'mr.', '<unk>', 'said', 'there', 'are']])
+('hidden_state_c_1:', 0.069)
+('------Step ', 15, '-------')
+('ori_sequences: ', [['stocks', 'ual', 'amr', 'bankamerica', 'walt', 'disney', 'capital', 'cities\\/abc', 'philip', 'morris']])
+('next_batch_sequences: ', array([['countries', "n't", 'yet', 'happen', 'from', 'bankruptcy',
+        'proceedings', 'next', 'month', 'when']], dtype='|S11'))
+('ori_samples: ', [['integrated', 'ariz.', '<eos>', '<unk>', 'c.', 'square', 'seven-day', 'university', 'who', 'claimed', 'mr.', 'bush', 'is', 'expected', 'to', 'close', 'to', 'nov.', 'N', 'from', 'N', 'N', 'in', 'august', '<eos>', 'for', 'all', 'the', 'financial', 'firms']])
+('adv_sequences: ', [['stocks', 'ual', 'stock', 'bankamerica', 'walt', 'disney', 'capital', 'cities\\/abc', 'philip', 'morris']])
+('is generate', True)
+('x: ', array([[ 149,  408, 2988, 3559, 6649, 3983,  180, 8038, 1695, 1978]],
+      dtype=int32), 'x_prime: ', array([[ 149,  408,   60, 3559, 6649, 3983,  180, 8038, 1695, 1978]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['gamble', 'them', 'smaller', 'than', 'two-thirds', 'of', 'their',
+        'own', 'accounts', 'late']], dtype='|S10'))
+('samples after adversarial attacks: ', [['rose', 'N', 'to', 'N', 'N', 'in', 'heavy', 'trading', '<eos>', 'such', '<unk>', '<unk>', 'can', 'be', 'criticized', 'in', 'south', 'africa', 'and', 'to', 'roll', 'a', 'broad', 'offensive', 'between', 'west', 'coast', 'and', '<unk>', 'in']])
+('hidden_state_c_1:', 0.07325)
+('------Step ', 16, '-------')
+('ori_sequences: ', [['and', 'pacific', 'telesis', 'group', 'stopped', 'trading', 'and', 'never', 'resumed', '<eos>']])
+('next_batch_sequences: ', array([['moreover', 'actual', 'gross', 'national', 'intergroup', 'corp.',
+        'minneapolis', 'closed', 'unchanged', 'at']], dtype='|S11'))
+('ori_samples: ', [['its', 'group', 'says', 'it', 'obtained', 'a', 'money', 'from', 'a', 'year', 'ago', 'homeowners', '<eos>', 'so', 'after', 'the', 'release', 'of', 'the', 'crowd', 'which', 'requires', 'program', 'trading', 'portfolios', 'on', 'their', 'own', 'system', '<eos>']])
+('adv_sequences: ', [['and', 'pacific', 'moody', 'group', 'stopped', 'trading', 'and', 'never', 'resumed', '<eos>']])
+('is generate', True)
+('x: ', array([[   8,  688, 5845,   96, 1884,   76,    8,  574, 5710,    2]],
+      dtype=int32), 'x_prime: ', array([[   8,  688,  994,   96, 1884,   76,    8,  574, 5710,    2]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['moreover', 'actual', 'disobedience', 'comes', 'forward', 'with',
+        'least', "n't", 'necessarily', 'mean']], dtype='|S12'))
+('samples after adversarial attacks: ', [['in', 'addition', 'to', 'his', 'nominal', 'industry', 'there', 'is', 'providing', 'the', '<unk>', 'pace', '<eos>', 'in', 'london', 'the', 'N', 'N', 'dive', 'in', 'the', 'country', 'began', 'n.h.', "'s", 'chairman', 'and', 'chief', 'executive', 'officer']])
+('hidden_state_c_1:', 0.07725)
+('------Step ', 17, '-------')
+('ori_sequences: ', [['the', '<unk>', 'has', 'already', 'begun', '<eos>', 'the', 'equity', 'market', 'was']])
+('next_batch_sequences: ', array([['unavailable', 'than', 'one-third', 'of', 'rape', 'incest',
+        'than', 'march', 'N', 'units']], dtype='|S11'))
+('ori_samples: ', [['still', 'announced', 'in', 'property\\/casualty', 'news', 'and', 'consumer', 'imports', 'said', 'kenneth', '<unk>', 'president', 'of', 'stephen', '<unk>', 'new', 'york', '<eos>', 'a', 'diversion', 'of', 'a', 'face', 'executive', 'over', 'program', 'trading', 'after', 'at', '$']])
+('adv_sequences: ', [['the', 'over', 'has', 'already', 'begun', '<eos>', 'the', 'equity', 'market', 'was']])
+('is generate', True)
+('x: ', array([[   0,    1,   30,  293, 2359,    2,    0,  620,   47,   24]],
+      dtype=int32), 'x_prime: ', array([[   0,   94,   30,  293, 2359,    2,    0,  620,   47,   24]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['unavailable', 'than', 'one-third', 'of', 'rape', 'incest',
+        'than', 'march', 'N', 'units']], dtype='|S11'))
+('samples after adversarial attacks: ', [['less', 'disappointing', 'if', 'price', 'adjustments', 'would', 'be', 'united', 'illuminating', 'co.', 'or', '<unk>', '<unk>', 'by', 'the', 'end', 'of', 'the', 'quarter', 'of', 'N', 'though', 'strategists', 'reject', 'the', '<unk>', 'disaster', '<eos>', 'there', "'s"]])
+('hidden_state_c_1:', 0.081)
+('------Step ', 18, '-------')
+('ori_sequences: ', [['<unk>', '<eos>', 'once', 'again', 'the', 'specialists', 'were', 'not', 'able', 'to']])
+('next_batch_sequences: ', array([['deliver', 'them', 'before', 'maturity', 'ago', 'when', 'terms',
+        'are', "n't", 'disclosed']], dtype='|S9'))
+('ori_samples: ', [['operate', 'profits', '<eos>', 'N', 'billion', 'francs', 'price', 'of', '<unk>', 'workers', 'issued', 'a', 'fraction', 'of', 'over', 'the', 'next', 'seven', 'stages', '<eos>', 'proponents', 'of', 'the', 'question', 'that', 'american', 'espectador', 'have', 'contributed', 'to']])
+('adv_sequences: ', [['<unk>', '<eos>', 'vice', 'again', 'the', 'specialists', 'were', 'not', 'able', 'to']])
+('is generate', True)
+('x: ', array([[   1,    2,  499,  555,    0, 2165,   46,   63,  583,    5]],
+      dtype=int32), 'x_prime: ', array([[   1,    2,  232,  555,    0, 2165,   46,   63,  583,    5]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['deliver', 'them', 'beyond', 'speculation', 'about',
+        'cooperation', 'corp.', 'minneapolis', 'calif.', 'reported']],
+      dtype='|S11'))
+('samples after adversarial attacks: ', [['assist', 'the', '<unk>', 'institution', 'but', 'in', 'recent', 'days', 'a', 'new', 'york', 'opposite', 'two', 'separate', 'cough', 'for', 'daily', 'rates', '<eos>', 'proceeds', 'will', 'be', 'difficult', 'to', 'reach', 'a', 'term', 'on', 'the', 'newer']])
+('hidden_state_c_1:', 0.08475)
+('------Step ', 19, '-------')
+('ori_sequences: ', [['handle', 'the', 'imbalances', 'on', 'the', 'floor', 'of', 'the', 'new', 'york']])
+('next_batch_sequences: ', array([['mercantile', 'exchange', 'hutton', 'inc', '<eos>', 'moreover',
+        'higher', 'bidding', 'increases', 'caused']], dtype='|S10'))
+('ori_samples: ', [['state', 'policy', 'of', 'the', '<unk>', '<unk>', 'and', '<unk>', '<eos>', 'democracy', 'is', 'putting', 'her', '<unk>', 'ads', 'that', 'carries', 'its', 'character', 'because', 'of', 'the', 'columns', 'magazine', '<unk>', 'affiliates', 'such', 'as', 'spite', 'of']])
+('adv_sequences: ', [['handle', 'the', 'imbalances', 'on', 'the', 'floor', 'of', 'the', 'new', '$']])
+('is generate', True)
+('x: ', array([[2434,    0, 6360,   16,    0, 1013,    4,    0,   35,   92]],
+      dtype=int32), 'x_prime: ', array([[2434,    0, 6360,   16,    0, 1013,    4,    0,   35,   12]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['300-a-share', 'tender', 'hills', 'calif.', 'crash', 'filed',
+        'suit', 'valued', 'through', 'attorney']], dtype='|S11'))
+('samples after adversarial attacks: ', [['N', 'million', 'agreement', '<unk>', 'inc.', 'was', 'an', 'important', 'part', 'of', 'the', 'exxon', 'N', 'billion', 'francs', '$', 'N', 'billion', 'in', 'new', 'york', 'stock', 'exchange', 'composite', '<eos>', 'j.c.', 'stanley', 'eased', '$', 'N']])
+('hidden_state_c_1:', 0.08775)
+('------Step ', 20, '-------')
+('ori_sequences: ', [['stock', 'exchange', 'said', 'christopher', '<unk>', 'senior', 'vice', 'president', 'at', '<unk>']])
+('next_batch_sequences: ', array([['&', 'co', '<eos>', 'terms', 'were', "n't", 'disclosed',
+        'against', 'commerce', 'bills']], dtype='|S9'))
+('ori_samples: ', [['futures', 'officer', 'in', 'dallas', 'for', 'N', 'years', '<eos>', 'it', 'is', 'a', '<unk>', 'local', 'deal', 'starting', 'under', 'high-definition', 'asia', '<eos>', 'previously', 'south', 'carolina', 'is', "n't", 'much', 'likely', 'to', 'save', 'an', 'grade']])
+('adv_sequences: ', [['stock', 'exchange', 'said', 'christopher', '<unk>', 'senior', 'vice', '$', 'at', '<unk>']])
+('is generate', True)
+('x: ', array([[  60,  111,   15, 3012,    1,  445,  232,   71,   18,    1]],
+      dtype=int32), 'x_prime: ', array([[  60,  111,   15, 3012,    1,  445,  232,   12,   18,    1]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['inc', '<eos>', 'moreover', 'actual', 'factors', 'involving',
+        'exchanges', 'have', 'been', 'able']], dtype='|S9'))
+('samples after adversarial attacks: ', [['honecker', 'who', 'lost', 'few', 'dozen', '<unk>', 'for', 'an', 'american', 'brokerage', 'school', 'in', 'new', 'york', '<eos>', 'the', 'tone', 'will', 'be', 'tied', 'to', 'the', '<unk>', 'even', 'it', 'was', 'proceeding', '<eos>', 'that', 'includes']])
+('hidden_state_c_1:', 0.09225)
+('------Step ', 21, '-------')
+('ori_sequences: ', [['securities', 'corp', '<eos>', '<unk>', 'james', '<unk>', 'chairman', 'of', 'specialists', 'henderson']])
+('next_batch_sequences: ', array([['hands', 'from', 'bankruptcy', 'proceedings', 'offset', 'lower',
+        'interest', 'expense', 'exceed', 'one-third']], dtype='|S11'))
+('ori_samples: ', [['at', 'a', 'white', 'house', 'meeting', 'in', 'a', 'century', 'meeting', 'or', 'breach', '<eos>', 'saatchi', "'s", 'prosecutors', 'have', 'doubts', 'that', 'it', "'s", 'too', 'bad', 'to', 'hedge', 'them', '<eos>', '<unk>', '&', 'lorenzo', 'admitted']])
+('adv_sequences: ', [['securities', 'corp', '<eos>', '<unk>', 'between', '<unk>', 'chairman', 'of', 'specialists', 'henderson']])
+('is generate', True)
+('x: ', array([[ 125,  586,    2,    1,  559,    1,  142,    4, 2165, 5507]],
+      dtype=int32), 'x_prime: ', array([[ 125,  586,    2,    1,  178,    1,  142,    4, 2165, 5507]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['hands', 'from', 'bankruptcy', 'proceedings', 'geneva', '<eos>',
+        'moreover', 'actual', 'gross', 'product']], dtype='|S11'))
+('samples after adversarial attacks: ', [['in', 'N', 'another', 'edition', 'that', 'is', 'the', '<unk>', 'of', 'the', 'role', '<eos>', 'they', 'got', 'more', 'or', 'no', 'money', 'but', 'declined', 'it', 'after', 'coming', '<eos>', 'as', 'one', 'of', 'the', 'nation', "'s"]])
+('hidden_state_c_1:', 0.096)
+('------Step ', 22, '-------')
+('ori_sequences: ', [['brothers', 'inc.', 'it', 'is', 'easy', 'to', 'say', 'the', 'specialist', 'is']])
+('next_batch_sequences: ', array([['going', 'down', 'until', 'january', 'p.m.', 'est', 'hands',
+        'improve', 'activity', 'that']], dtype='|S8'))
+('ori_samples: ', [['up', 'to', 'sterling', '<eos>', 'but', 'surely', 'one', 'thing', 'is', "n't", 'much', 'fare', 'because', 'men', 'only', 'do', '<eos>', 'the', 'packwood', 'proposal', 'and', 'an', 'office', 'that', 'buy', 'rights', 'would', 'be', 'more', 'compete']])
+('adv_sequences: ', [['brothers', 'inc.', 'it', 'is', 'easy', 'to', 'say', 'the', 'specialist', 'almost']])
+('is generate', True)
+('x: ', array([[1000,   80,   14,   13, 1539,    5,  117,    0, 2518,   13]],
+      dtype=int32), 'x_prime: ', array([[1000,   80,   14,   13, 1539,    5,  117,    0, 2518,  511]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['below', 'her', 'level', 'of', 'intent', 'to', 'discuss',
+        'specific', 'actions', 'away']], dtype='|S8'))
+('samples after adversarial attacks: ', [['so', 'gets', 'making', 'harsh', 'time', 'necessary', 'enough', 'to', 'persuade', 'equipment', 'to', 'promote', '<unk>', 'disorders', 'such', 'as', 'a', 'risky', 'market', '<eos>', 'the', 'company', 'made', 'more', 'performing', 'for', 'most', 'years', 'to', 'come']])
+('hidden_state_c_1:', 0.0995)
+('------Step ', 23, '-------')
+('ori_sequences: ', [["n't", 'doing', 'his', 'job', '<eos>', 'when', 'the', 'dollar', 'is', 'in']])
+('next_batch_sequences: ', array([['danger', 'of', 'course', 'apart', 'nov.', 'N', 'million',
+        'guarantees', 'do', "n't"]], dtype='|S10'))
+('ori_samples: ', [['rally', "'s", '<unk>', 'something', 'show', 'we', 'should', 'be', 'called', 'the', '<unk>', 'because', 'there', "'s", 'no', 'sense', 'of', 'risk', 'enough', 'mr.', 'lawson', 'panel', 'said', '<eos>', 'he', 'charged', 'that', 'the', 'rights', 'plan']])
+('adv_sequences: ', [["n't", 'doing', 'such', 'job', '<eos>', 'when', 'the', 'dollar', 'is', 'in']])
+('is generate', True)
+('x: ', array([[ 32, 841,  49, 792,   2,  67,   0, 332,  13,   7]], dtype=int32), 'x_prime: ', array([[ 32, 841,  88, 792,   2,  67,   0, 332,  13,   7]], dtype=int32))
+('next_adv_batch_sequences = ', array([['danger', 'of', 'course', 'apart', 'nov.', 'N', 'million',
+        'guarantees', 'do', "n't"]], dtype='|S10'))
+('samples after adversarial attacks: ', [['the', '$', 'N', 'to', 'an', 'unusual', 'market', 'a', 'month', '<eos>', 'in', 'the', 'tonight', 'new', 'york', 'times', 'it', 'said', 'a', 'big', 'takeover', 'dispute', 'based', 'in', 'sand', 'behind', 'the', 'artist', "'s", 'first']])
+('hidden_state_c_1:', 0.102)
+('------Step ', 24, '-------')
+('ori_sequences: ', [['a', '<unk>', 'even', 'central', 'banks', 'ca', "n't", 'stop', 'it', '<eos>']])
+('next_batch_sequences: ', array([['moreover', 'other', 'states', 'including', 'negotiating',
+        'buyers', 'who', 'wish', 'them', 'toward']], dtype='|S11'))
+('ori_samples: ', [['he', 'concedes', 'that', 'it', 'does', "n't", 'appear', 'a', '<unk>', 'but', 'in', 'a', 'positive', 'times', 'he', 'contends', '<eos>', 'the', 'network', 'has', 'been', '<unk>', '<eos>', 'philadelphia', 'today', 'may', 'now', 'be', 'abandoning', 'by']])
+('adv_sequences: ', [['a', '<unk>', 'even', 'central', 'banks', 'ca', 'merrill', 'stop', 'it', '<eos>']])
+('is generate', True)
+('x: ', array([[   6,    1,  113,  876,  247,  562,   32, 1146,   14,    2]],
+      dtype=int32), 'x_prime: ', array([[   6,    1,  113,  876,  247,  562,  813, 1146,   14,    2]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['moreover', 'unlike', 'us', 'looking', 'forward', 'equipment',
+        'corp.', 'minneapolis', 'jones', 'professional']], dtype='|S12'))
+('samples after adversarial attacks: ', [['campbell', "'s", 'arizona', 'department', 'departments', 'attending', 'bear', 'stearns', 'will', 'incur', '<eos>', 'ec', 'agencies', 'he', 'said', 'judge', 'hastings', 'and', 'miller', 'to', 'seek', 'a', 'mess', 'of', '<unk>', 'in', 'which', 'the', 'government', 'would']])
+('hidden_state_c_1:', 0.106)
+('------Step ', 25, '-------')
+('ori_sequences: ', [['speculators', 'are', 'calling', 'for', 'a', 'degree', 'of', 'liquidity', 'that', 'is']])
+('next_batch_sequences: ', array([['happening', 'remains', 'low', 'than', 'two-thirds', 'of',
+        'them', 'back', 'into', 'capital']], dtype='|S10'))
+('ori_samples: ', [["n't", 'supporting', '<eos>', 'instead', 'joel', '<unk>', 'the', 'chief', 'executive', 'of', '<unk>', 'used', 'in', 'the', 'british', 'automotive', 'markets', '<eos>', 'following', 'u.s.', 'commerce', 'reports', 'feb.', 'N', 'N', 'of', 'the', 'respondents', 'not', '<eos>']])
+('adv_sequences: ', [['speculators', 'are', 'calling', 'how', 'a', 'degree', 'of', 'liquidity', 'that', 'is']])
+('is generate', True)
+('x: ', array([[3201,   26, 2404,   11,    6, 3552,    4, 1840,   10,   13]],
+      dtype=int32), 'x_prime: ', array([[3201,   26, 2404,  242,    6, 3552,    4, 1840,   10,   13]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['regarded', 'as', 'milestones', 'of', 'american', 'medical',
+        'care', 'inc', '<eos>', 'meanwhile']], dtype='|S10'))
+('samples after adversarial attacks: ', [['used', 'to', 'make', 'it', 'usx', 'as', 'possible', '<eos>', 'also', 'the', '<unk>', 'that', 'generates', 'competition', 'from', 'the', 'coffee', 'and', '<unk>', '<eos>', 'in', 'N', 'western', 'european', 'education', 'minister', '<unk>', 'arranged', 'his', 'father']])
+('hidden_state_c_1:', 0.11)
+('------Step ', 26, '-------')
+('ori_sequences: ', [['not', 'there', 'in', 'the', 'market', '<eos>', 'many', 'money', 'managers', 'and']])
+('next_batch_sequences: ', array([['syndicate', 'ambassador', 'dole', 'worth', 'us$', 'N',
+        'million', 'nyse', 'ended', 'june']], dtype='|S10'))
+('ori_samples: ', [['a', 'large', 'market', 'order', 'is', 'the', 'reset', 'serving', 'being', 'likely', 'closely', '<eos>', 'while', 'there', 'have', 'been', 'a', 'few', 'questions', 'the', 'minds', 'not', 'to', 'be', 'held', 'through', 'this', 'stage', 'without', 'a']])
+('adv_sequences: ', [['not', 'there', 'in', 'the', 'market', 'how', 'many', 'money', 'managers', 'and']])
+('is generate', True)
+('x: ', array([[ 63,  83,   7,   0,  47,   2,  97, 161, 584,   8]], dtype=int32), 'x_prime: ', array([[ 63,  83,   7,   0,  47, 242,  97, 161, 584,   8]], dtype=int32))
+('next_adv_batch_sequences = ', array([['syndicate', 'equipment', 'inc', '<eos>', 'moreover', 'N',
+        'million', 'swiss', 'francs', '$']], dtype='|S9'))
+('samples after adversarial attacks: ', [['care', 'matters', 'said', 'portfolio', 'managers', 'predict', '<eos>', '\\*', 'toyota', 'and', 'most', 'other', 'pennsylvania', 'could', 'use', 'the', 'fed', 'until', 'san', 'francisco', 'and', '<unk>', 'until', 'turning', 'any', 'active', 'global', 'gains', '<eos>', 'these']])
+('hidden_state_c_1:', 0.113)
+('------Step ', 27, '-------')
+('ori_sequences: ', [['some', 'traders', 'had', 'already', 'left', 'their', 'offices', 'early', 'friday', 'afternoon']])
+('next_batch_sequences: ', array([['after', 'hurricane', 'hugo', 'corp', '<eos>', 'moreover',
+        'actual', 'arabia', 'has', 'been']], dtype='|S9'))
+('ori_samples: ', [['following', 'that', '<unk>', '<unk>', '<eos>', 'schools', 'for', 'an', 'insurer', 'of', 'corporate', 'many', 'japanese', 'banks', 'have', 'four-day', 'fake', '<unk>', 'talks', 'about', 'the', '<unk>', "'", 'realistic', 'gallery', '<eos>', 'chrysler', 'corp.', 'arranged', 'in']])
+('adv_sequences: ', [['some', 'traders', 'declines', 'already', 'left', 'their', 'offices', 'early', 'friday', 'afternoon']])
+('is generate', True)
+('x: ', array([[  57,  280,   50,  293,  696,   51, 1153,  266,  282, 1735]],
+      dtype=int32), 'x_prime: ', array([[  57,  280, 1255,  293,  696,   51, 1153,  266,  282, 1735]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['index', 'arbitrage', 'corp', '<eos>', 'meanwhile', 'average',
+        'daily', 'volume', 'totaled', 'five']], dtype='|S9'))
+('samples after adversarial attacks: ', [['<eos>', 'lloyd', "'s", 'said', 'the', 'amount', 'of', '<unk>', 'is', 'proud', 'of', 'its', 'fleet', '<eos>', 'investor', 'crude', 'has', 'been', 'executive', 'debt', 'earmarked', 'for', 'shipments', 'to', 'the', 'total', 'value', '<eos>', 'the', 'price']])
+('hidden_state_c_1:', 0.11575)
+('------Step ', 28, '-------')
+('ori_sequences: ', [['on', 'a', 'warm', 'autumn', 'day', 'because', 'the', 'stock', 'market', 'was']])
+('next_batch_sequences: ', array([["n't", 'necessarily', 'happen', '<eos>', 'meanwhile',
+        'painewebber', 'roebuck', '&', 'trecker', 'stock']], dtype='|S11'))
+('ori_samples: ', [['stronger', 'all', 'of', 'N', 'said', 'bernard', '<unk>', 'head', 'of', 'india', "'s", 'read', 'for', 'the', 'union', '<eos>', 'the', 'federal', 'agency', 'is', 'expected', 'to', 'have', 'increased', 'N', 'cents', 'a', 'pound', '<eos>', 'small']])
+('adv_sequences: ', [['on', 'a', 'warm', 'autumn', 'day', 'because', 'the', 'stock', 'market', 'between']])
+('is generate', True)
+('x: ', array([[  16,    6, 4921, 6629,  272,   77,    0,   60,   47,   24]],
+      dtype=int32), 'x_prime: ', array([[  16,    6, 4921, 6629,  272,   77,    0,   60,   47,  178]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['stocks', 'themselves', 'here', 'happen', 'than', 'usual',
+        'points', 'date', 'among', 'instance']], dtype='|S10'))
+('samples after adversarial attacks: ', [['the', 'futures', 'and', 'stock', 'prices', 'fell', 'at', 'N', '<eos>', 'in', 'early', 'trading', 'in', 'october', '<unk>', 'had', 'been', 'the', 'big', 'investor', 'since', 'the', 'retailer', 'began', 'sleeping', 'the', 'technique', 'created', 'by', 'mr.']])
+('hidden_state_c_1:', 0.11925)
+('------Step ', 29, '-------')
+('ori_sequences: ', [['so', 'quiet', '<eos>', 'then', 'in', 'a', '<unk>', 'plunge', 'the', 'dow']])
+('next_batch_sequences: ', array([['jones', 'equity', 'market', 'includes', 'about', 'one-third',
+        'of', 'datapoint', 'corp', '<eos>']], dtype='|S9'))
+('ori_samples: ', [['jones', 'company', 'said', '<eos>', 'at', 'the', 'previous', '<unk>', 'gerard', 'semel', 'however', '<unk>', 'would', 'have', 'been', 'appointed', 'to', 'the', 'N', 'sales', 'lab', 'alliance', 'by', 'major', 'firms', '<eos>', 'maybe', 'it', '<unk>', 'into']])
+('adv_sequences: ', [['so', 'quiet', 'foreign', 'then', 'in', 'a', '<unk>', 'plunge', 'the', 'dow']])
+('is generate', True)
+('x: ', array([[ 105, 2756,    2,  223,    7,    6,    1, 1231,    0,  447]],
+      dtype=int32), 'x_prime: ', array([[ 105, 2756,  244,  223,    7,    6,    1, 1231,    0,  447]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['jones', 'industrial', 'average', 'up', 'about', 'one-third',
+        'things', 'than', "n't", 'affect']], dtype='|S10'))
+('samples after adversarial attacks: ', [['jones', 'industrial', 'average', 'said', 'it', 'might', 'american', 'the', 'jittery', 'bank', 'of', 'japan', '<eos>', 'who', "'s", 'pretty', 'large', 'about', 'offset', 'the', 'bid', 'a', 'staggering', 'investment', 'company', 'now', 'that', 'finds', 'with', 'potential']])
+('hidden_state_c_1:', 0.1225)
+('------Step ', 30, '-------')
+('ori_sequences: ', [['jones', 'industrials', 'in', 'barely', 'an', 'hour', 'surrendered', 'about', 'a', 'third']])
+('next_batch_sequences: ', array([['consecutive', 'season', 'despite', 'signs', 'that', 'china',
+        "'s", 'biggest', 'private-sector', 'bank']], dtype='|S14'))
+('ori_samples: ', [['of', 'its', 'firm', 'urging', 'his', 'own', 'unique', 'account', 'to', 'the', 'u.s.', 'district', 'to', 'N', 'N', 'showing', 'a', 'move', 'that', 'could', 'change', 'its', 'backers', 'by', 'merksamer', '<eos>', 'bid', 'after', 'N', 'a.m.']])
+('adv_sequences: ', [['jones', 'industrials', 'in', 'barely', 'an', 'hour', 'surrendered', 'about', 'an', 'third']])
+('is generate', True)
+('x: ', array([[ 458, 2606,    7, 3160,   31, 1476, 8299,   43,    6,  276]],
+      dtype=int32), 'x_prime: ', array([[ 458, 2606,    7, 3160,   31, 1476, 8299,   43,   31,  276]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['consecutive', 'gain', 'from', 'discontinued', 'operations',
+        'vary', 'widely', 'materialized', '<eos>', 'moreover']],
+      dtype='|S12'))
+('samples after adversarial attacks: ', [['set', 'of', 'interests', 'in', 'small', '<eos>', 'to', 'make', 'other', 'soviets', 'who', 'remember', 'business', 'trading', 'as', 'calculated', 'by', 'gas', 'yields', 'in', 'market', 'indexes', '<eos>', 'the', 'other', 'barometer', 'may', 'be', 'included', 'as']])
+('hidden_state_c_1:', 0.1255)
+('------Step ', 31, '-------')
+('ori_sequences: ', [['of', 'their', 'gains', 'this', 'year', '<unk>', 'up', 'a', '190.58-point', 'or']])
+('next_batch_sequences: ', array([['worse', 'than', 'usual', 'until', 'january', 'p.m.', 'est',
+        'trades', 'aimed', 'at']], dtype='|S7'))
+('ori_samples: ', [['of', '$', 'N', 'million', 'from', 'subsidized', 'fewer', 'than', '#', 'N', 'billion', 'in', 'the', 'new', 'york', 'stock', 'exchange', '<eos>', 'some', 'of', 'the', 'victims', 'in', 'the', 'business', 'law', 'say', 'the', '<unk>', 'three-month']])
+('adv_sequences: ', [['of', 'their', 'this', 'this', 'year', '<unk>', 'up', 'a', '190.58-point', 'or']])
+('is generate', True)
+('x: ', array([[   4,   51,  553,   39,   40,    1,   52,    6, 9170,   36]],
+      dtype=int32), 'x_prime: ', array([[   4,   51,   39,   39,   40,    1,   52,    6, 9170,   36]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['limit', 'capital', 'spending', 'index', 'arbitrage',
+        'outstanding', 'james', 'r.', 'alto', 'iii']], dtype='|S11'))
+('samples after adversarial attacks: ', [['book', 'value', 'of', 'the', 'government', "'s", 'shares', '<eos>', 'the', 'latest', 'N', 'securities', 'were', 'strongly', 'quoted', 'in', 'london', "'s", 'stock', 'an', 'open', 'investment', '<eos>', 'the', 'record', 'two-year', 'steps', 'related', 'to', 'those']])
+('hidden_state_c_1:', 0.129)
+('------Step ', 32, '-------')
+('ori_sequences: ', [['N', 'N', 'loss', 'on', 'the', 'day', 'in', '<unk>', 'trading', 'volume']])
+('next_batch_sequences: ', array([['margins', 'listed', 'companies', 'want', 'access', 'billion',
+        'debt', 'ceiling', 'lower', 'school']], dtype='|S9'))
+('ori_samples: ', [['<eos>', 'first', '<unk>', 'were', 'about', 'an', '<unk>', '<unk>', 'firm', 'b.a.t', 'suspended', 'its', 'direct', 'competitor', 'in', 'half', 'of', 'that', 'day', 'on', 'a', 'subsidiary', 'of', 'the', 'people', 'and', '<unk>', 'of', '<unk>', 'with']])
+('adv_sequences: ', [['N', 'N', 'loss', 'on', 'the', 'day', 'in', '<unk>', 'trading', 'between']])
+('is generate', True)
+('x: ', array([[  3,   3, 253,  16,   0, 272,   7,   1,  76, 395]], dtype=int32), 'x_prime: ', array([[  3,   3, 253,  16,   0, 272,   7,   1,  76, 178]], dtype=int32))
+('next_adv_batch_sequences = ', array([['robert', 'spielvogel', 'co.', 'subsidiary', 'reported',
+        'third-quarter', 'earnings', 'grew', 'slightly', 'or']],
+      dtype='|S13'))
+('samples after adversarial attacks: ', [['N', 'and', 'N', 'and', 'N', 'for', 'the', 'ad', '<eos>', 'this', 'is', 'the', 'most', 'actively', 'traded', 'agent', 'who', 'is', "n't", 'clear', 'whether', 'people', 'are', 'going', 'to', 'eat', '<eos>', 'she', 'owns', '<unk>']])
+('hidden_state_c_1:', 0.13225)
+('------Step ', 33, '-------')
+('ori_sequences: ', [['<eos>', '<unk>', 'trading', 'accelerated', 'to', 'N', 'million', 'shares', 'a', 'record']])
+('next_batch_sequences: ', array([['rate', 'cuts', 'than', "n't", 'necessarily', 'want', 'us',
+        'you', "'ll", 'be']], dtype='|S11'))
+('ori_samples: ', [['$', 'N', '<eos>', 'in', 'the', 'latest', 'quarter', '<unk>', '<unk>', '<unk>', 'ill.', 'is', 'the', 'trade', 'group', '<unk>', '<eos>', 'chicago', 'rose', 'a', 'garden', '<eos>', 'an', 'israeli', 'government', 'official', 'said', 'the', 'national', 'commission']])
+('adv_sequences: ', [['<eos>', '<unk>', 'trading', 'accelerated', 'to', 'N', 'million', 'closed', 'a', 'record']])
+('is generate', True)
+('x: ', array([[   2,    1,   76, 7433,    5,    3,   21,   70,    6,  439]],
+      dtype=int32), 'x_prime: ', array([[   2,    1,   76, 7433,    5,    3,   21,  249,    6,  439]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['rate', 'of', 'interbank', 'burnham', 'lambert', 'inc', '<eos>',
+        'we', "'re", "n't"]], dtype='|S9'))
+('samples after adversarial attacks: ', [['N', 'million', 'shares', '<eos>', 'exxon', 'universal', 'plunged', 'about', 'N', 'at', 'N', 'N', 'the', 'company', 'on', 'jan.', 'N', 'N', '<eos>', 'an', 'agent', 'off', 'to', 'its', '<unk>', 'the', 'voices', 'come', 'out', 'on']])
+('hidden_state_c_1:', 0.13575)
+('------Step ', 34, '-------')
+('ori_sequences: ', [['for', 'the', 'big', 'board', '<eos>', 'at', 'the', 'end', 'of', 'the']])
+('next_batch_sequences: ', array([['day', 'where', 'necessary', 'lines', 'tend', 'to', 'spark',
+        'significant', 'quantities', 'between']], dtype='|S11'))
+('ori_samples: ', [['decade', 'good', 'news', 'rep', 'employed', 'in', 'july', '<eos>', 'there', 'is', 'your', 'way', 'money', '<eos>', 'it', 'would', 'save', 'the', 'accounting', 'backlash', 'into', 'its', 'golden', 'withdrawal', 'by', 'the', 'republic', "'s", 'panama', 'hotel']])
+('adv_sequences: ', [['for', 'the', 'big', 'board', 'about', 'at', 'the', 'end', 'of', 'the']])
+('is generate', True)
+('x: ', array([[ 11,   0, 129, 146,   2,  18,   0, 236,   4,   0]], dtype=int32), 'x_prime: ', array([[ 11,   0, 129, 146,  43,  18,   0, 236,   4,   0]], dtype=int32))
+('next_adv_batch_sequences = ', array([['session', 'against', 'noriega', 'starts', 'into', 'common',
+        'sense', 'yet', 'exactly', 'how']], dtype='|S7'))
+('samples after adversarial attacks: ', [['week', 'mine', 'in', 'the', 'newspaper', "'s", '<unk>', 'society', '<eos>', 'healthvest', 'had', 'detected', 'and', '<unk>', 'by', 'two', 'plaintiffs', 'and', 'after', 'monday', "'s", 'price', 'barrier', 'and', 'troops', 'according', 'to', 'a', 'report', 'by']])
+('hidden_state_c_1:', 0.13875)
+('------Step ', 35, '-------')
+('ori_sequences: ', [['day', 'N', 'million', 'shares', 'were', 'traded', '<eos>', 'the', 'dow', 'jones']])
+('next_batch_sequences: ', array([['equity', 'market', 'index', 'b', 'N', 'marks', 'late', 'jan.',
+        'N', 'as']], dtype='|S6'))
+('ori_samples: ', [['industrial', 'average', 'fell', 'just', 'to', 'N', 'points', 'in', 'N', '<eos>', 'today', 'the', 'seabrook', '&', 'natural', 'company', "'s", 'sister', 'adviser', 'came', 'after', 'taxes', 'doubt', 'that', 'an', 'audit', 'campaign', 'a', 'simple', '<unk>']])
+('adv_sequences: ', [['day', 'N', 'so', 'shares', 'were', 'traded', '<eos>', 'the', 'dow', 'jones']])
+('is generate', True)
+('x: ', array([[272,   3,  21,  70,  46, 925,   2,   0, 447, 458]], dtype=int32), 'x_prime: ', array([[272,   3, 105,  70,  46, 925,   2,   0, 447, 458]], dtype=int32))
+('next_adv_batch_sequences = ', array([['equity', 'market', 'index', 'b', 'N', 'marks', 'late', 'jan.',
+        'N', 'as']], dtype='|S6'))
+('samples after adversarial attacks: ', [['industrials', 'offered', 'about', '$', 'N', 'a', 'share', 'or', 'about', '$', 'N', 'million', '<eos>', 'we', 'win', 'a', 'major', 'attitude', 'in', 'the', 'future', 'for', 'not', 'only', 'another', 'year', 'but', 'it', "'s", 'not']])
+('hidden_state_c_1:', 0.142)
+('------Step ', 36, '-------')
+('ori_sequences: ', [['industrials', 'closed', 'at', 'N', '<eos>', 'the', 'dow', "'s", 'decline', 'was']])
+('next_batch_sequences: ', array([["n't", 'necessarily', 'happen', '<eos>', 'ual', 'corp.',
+        'definitively', 'agreed', 'that', 'paribas']], dtype='|S12'))
+('ori_samples: ', [['noncallable', 'on', 'the', 'issue', 'although', 'interest', 'rates', 'will', 'be', 'reduced', 'as', 'much', 'as', 'those', 'for', 'any', 'more', 'than', 'N', 'N', 'of', 'the', '<unk>', 'adults', '<eos>', 'the', 'group', 'of', 'pinpoint', 'financing']])
+('adv_sequences: ', [['industrials', 'closed', 'at', 'N', '<eos>', 'annual', 'dow', "'s", 'decline', 'was']])
+('is generate', True)
+('x: ', array([[2606,  249,   18,    3,    2,    0,  447,    9,  460,   24]],
+      dtype=int32), 'x_prime: ', array([[2606,  249,   18,    3,    2,  366,  447,    9,  460,   24]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([["n't", 'exactly', 'actual', 'goods', "'", 'ability', 'to',
+        'keep', 'additional', 'loan']], dtype='|S10'))
+('samples after adversarial attacks: ', [['fully', 'diluted', 'from', 'u.s.', 'carbide', '<eos>', 'introducing', 'new', 'support', 'for', 'months', 'another', 'crime', 'has', 'fallen', '<unk>', 'all', '<eos>', 'few', 'people', 'who', 'participated', '<unk>', 'are', 'that', 'is', 'taking', 'a', 'tight', 'market']])
+('hidden_state_c_1:', 0.145)
+('------Step ', 37, '-------')
+('ori_sequences: ', [['second', 'in', 'point', 'terms', 'only', 'to', 'the', '<unk>', 'black', 'monday']])
+('next_batch_sequences: ', array([["'s", 'second-largest', 'steelmaker', 'created', 'by',
+        'contrast', 'billion', 'funds', "'", 'cds']], dtype='|S14'))
+('ori_samples: ', [['<eos>', 'it', 'was', 'especially', '<unk>', 'because', 'it', 'does', "n't", 'really', 'have', 'access', 'to', 'economics', 'as', 'a', 'company', 'deal', '<eos>', 'censorship', 'for', 'two', 'miles', '<eos>', 'payment', 'are', 'expected', 'to', 'extend', 'on']])
+('adv_sequences: ', [['second', 'in', 'point', 'terms', 'only', 'to', 'the', 'san', 'black', 'monday']])
+('is generate', True)
+('x: ', array([[334,   7, 374, 519,  86,   5,   0,   1, 754, 382]], dtype=int32), 'x_prime: ', array([[334,   7, 374, 519,  86,   5,   0, 304, 754, 382]], dtype=int32))
+('next_adv_batch_sequences = ', array([['night', 'against', 'fears', 'about', 'cooperation', 'corp.',
+        'minneapolis', 'plc', 'calif.', 'sugarman']], dtype='|S11'))
+('samples after adversarial attacks: ', [['night', 'he', 'says', 'it', 'is', 'looking', 'for', 'renewed', 'market', 'today', '<eos>', 'the', 'merkur', 'gulf', 'took', 'the', 'phase', 'of', 'a', '<unk>', 'delicate', 'or', 'private', 'client', 'that', '<unk>', 'changes', 'in', 'the', 'unification']])
+('hidden_state_c_1:', 0.148)
+('------Step ', 38, '-------')
+('ori_sequences: ', [['crash', 'that', 'occurred', 'oct.', 'N', 'N', '<eos>', 'in', 'percentage', 'terms']])
+('next_batch_sequences: ', array([["'", 'debt', 'ceiling', 'grew', 'slightly', 'to', '#',
+        '300-a-share', 'million', 'francs']], dtype='|S11'))
+('ori_samples: ', [['china', 'and', 'others', 'said', 'there', 'could', 'be', '$', 'N', 'million', 'to', '$', 'N', 'million', 'of', 'dutch', 'parcel', 'for', 'the', 'week', '<eos>', 'usual', 'japan', "'s", 'parliament', 'may', 'have', 'to', 'permit', 'this']])
+('adv_sequences: ', [['crash', 'board', 'occurred', 'oct.', 'N', 'N', '<eos>', 'in', 'percentage', 'terms']])
+('is generate', True)
+('x: ', array([[1040,   10, 2840,  313,    3,    3,    2,    7,  760,  519]],
+      dtype=int32), 'x_prime: ', array([[1040,  146, 2840,  313,    3,    3,    2,    7,  760,  519]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['exchange', 'managers', 'agree', 'that', 'amounts', 'from',
+        'discontinued', 'operations', 'vary', 'widely']], dtype='|S12'))
+('samples after adversarial attacks: ', [['carrying', 'more', 'than', 'N', 'N', 'looking', 'into', 'earnings', 'for', '<unk>', 'associates', '<eos>', 'business', 'bankers', 'had', '<unk>', 'executive', 'earlier', 'this', 'year', 'a', 'toilet', '<unk>', 'named', 'three', 'of', 'finland', "'s", 'media', 'commission']])
+('hidden_state_c_1:', 0.1515)
+('------Step ', 39, '-------')
+('ori_sequences: ', [['however', 'the', 'dow', "'s", 'dive', 'was', 'the', '<unk>', 'ever', 'and']])
+('next_batch_sequences: ', array([['pricings', 'rates', 'include', 'investors', "'",
+        'relationships', 'with', 'saatchi', '&', 'mather']], dtype='|S13'))
+('ori_samples: ', [['an', '<unk>', 'tone', 'for', 'the', 'first', 'time', 'in', 'a', '<unk>', 'market', 'letter', 'its', 'floor', 'has', 'an', 'indication', 'of', 'the', 'list', 'of', '<unk>', 'to', 'free', 'services', '<eos>', 'the', 'merc', 'has', 'said']])
+('adv_sequences: ', [['however', 'the', 'dow', "'s", 'currently', 'was', 'the', '<unk>', 'ever', 'and']])
+('is generate', True)
+('x: ', array([[ 228,    0,  447,    9, 8165,   24,    0,    1,  822,    8]],
+      dtype=int32), 'x_prime: ', array([[228,   0, 447,   9, 487,  24,   0,   1, 822,   8]], dtype=int32))
+('next_adv_batch_sequences = ', array([['pricings', 'margins', 'vary', 'widely', 'associates', 'co.',
+        'hewlett-packard', 'co', '<eos>', 'mobil']], dtype='|S15'))
+('samples after adversarial attacks: ', [['have', 'been', 'democrats', 'within', 'a', '<unk>', 'detailing', 'the', 'daily', 'house', '<eos>', 'i', 'would', "n't", 'believes', 'if', 'people', "'ll", 'be', 'able', 'to', 'fix', 'and', 'many', '<unk>', 'companies', 'that', 'receive', 'the', '<unk>']])
+('hidden_state_c_1:', 0.15475)
+('------Step ', 40, '-------')
+('ori_sequences: ', [['the', 'sharpest', 'since', 'the', 'market', 'fell', 'N', 'or', 'N', 'N']])
+('next_batch_sequences: ', array([['annually', 'down', 'your', 'intraday', 'diluted', 'share',
+        'followed', 'by', 'contrast', 'comparable']], dtype='|S10'))
+('ori_samples: ', [['to', 'N', 'N', '<eos>', 'bidding', 'data', 'said', 'in', 'belgium', "'s", 'history', 'most', 'of', 'those', 'owners', 'who', 'lobbied', 'lines', 'and', 'keeping', 'the', '<unk>', '<unk>', '<eos>', 'mr.', '<unk>', 'is', 'a', 'member', 'of']])
+('adv_sequences: ', [['the', 'sharpest', 'between', 'the', 'market', 'fell', 'N', 'or', 'N', 'N']])
+('is generate', True)
+('x: ', array([[   0, 9913,  155,    0,   47,  203,    3,   36,    3,    3]],
+      dtype=int32), 'x_prime: ', array([[   0, 9913,  178,    0,   47,  203,    3,   36,    3,    3]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['due', 'march', 'delivery', 'ended', 'volume', 'composite',
+        'corp', '<eos>', 'nevertheless', 'actual']], dtype='|S12'))
+('samples after adversarial attacks: ', [['to', 'N', 'N', 'as', 'a', 'big', 'financing', 'for', 'lockheed', 'corp.', 'a', 'single', 'management', 'company', 'that', 'is', '<unk>', 'in', 'hawaii', 'and', 'the', 'u.s.', 'minn.', 'creditors', 'are', 'foundation', 'of', 'japan', '<eos>', 'young']])
+('hidden_state_c_1:', 0.15725)
+('------Step ', 41, '-------')
+('ori_sequences: ', [['a', 'week', 'after', 'black', 'monday', '<eos>', 'the', 'dow', 'fell', 'N']])
+('next_batch_sequences: ', array([['points', 'lower', 'than', 'usual', 'levels', 'of', 'rape',
+        'hill', 'faces', 'legislation']], dtype='|S11'))
+('ori_samples: ', [['N', 'in', 'the', 'week', 'ended', 'tuesday', 'but', 'also', 'late', 'in', 'the', 'congressman', '<eos>', 'only', 'two', 'blacks', 'have', 'tried', 'still', 'to', 'do', 'with', 'normal', '<eos>', 'i', "'ve", 'seen', 'gene', 'maidenform', "'s"]])
+('adv_sequences: ', [['a', 'week', 'after', 'black', 'monday', '<eos>', 'mr.', 'dow', 'fell', 'N']])
+('is generate', True)
+('x: ', array([[  6, 123,  78, 754, 382,   2,   0, 447, 203,   3]], dtype=int32), 'x_prime: ', array([[  6, 123,  78, 754, 382,   2,  23, 447, 203,   3]], dtype=int32))
+('next_adv_batch_sequences = ', array([['cents', 'payable', 'dec.', 'N', 'priced', 'capped', 'many',
+        'analysts', "'", 'estimates']], dtype='|S9'))
+('samples after adversarial attacks: ', [['at', 'the', 'retail', 'level', '<eos>', 'on', 'last', 'week', 'the', 'potential', 'holdings', 'of', 'commerce', 'estimates', 'a', 'text', 'more', 'than', 'on', 'the', 'war', 'on', 'the', 'jolla', "'", '<unk>', 'to', 'the', '<unk>', '<eos>']])
+('hidden_state_c_1:', 0.1605)
+('------Step ', 42, '-------')
+('ori_sequences: ', [['N', 'on', 'black', 'monday', '<eos>', 'shares', 'of', 'ual', 'the', 'parent']])
+('next_batch_sequences: ', array([['company', 'alleges', 'that', 'effect', 'on', 'behalf', 'of',
+        'rape', 'incest', 'than']], dtype='|S7'))
+('ori_samples: ', [['of', 'the', 'municipal', 'transaction', 'board', '<eos>', 'the', 'u.s.', 'plan', 'to', 'allow', 'investors', 'to', 'the', 'backdrop', 'of', 'new', 'imf', 'bargains', '<eos>', 'their', 'competitors', 'rushed', 'to', 'expand', 'their', 'cases', 'perhaps', 'a', 'ups']])
+('adv_sequences: ', [['N', 'on', 'black', 'monday', 'first', 'shares', 'of', 'ual', 'the', 'parent']])
+('is generate', True)
+('x: ', array([[  3,  16, 754, 382,   2,  70,   4, 408,   0, 730]], dtype=int32), 'x_prime: ', array([[  3,  16, 754, 382,  74,  70,   4, 408,   0, 730]], dtype=int32))
+('next_adv_batch_sequences = ', array([['company', 'cited', 'him', 'interested', 'in', 'acquiring',
+        'drugs', 'ranging', 'from', 'creditors']], dtype='|S10'))
+('samples after adversarial attacks: ', [['and', 'aerospace', 'group', "'s", 'newly', 'responsible', 'for', 'considerable', 'positions', 'in', 'its', 'business', 'plan', 'his', 'company', 'will', 'expand', 'its', 'cash', 'reserves', 'to', 'N', 'N', '<eos>', 'we', 'will', 'have', 'a', 'bonus', 'for']])
+('hidden_state_c_1:', 0.16375)
+('------Step ', 43, '-------')
+('ori_sequences: ', [['of', 'united', 'airlines', 'were', 'extremely', 'active', 'all', 'day', 'friday', 'reacting']])
+('next_batch_sequences: ', array([['friday', 'merrill', 'lynch', '&', 'co', '<eos>', 'meanwhile',
+        'investor', 'watchers', "'"]], dtype='|S9'))
+('ori_samples: ', [['to', 'ignoring', 'federal', "'s", 'interest', 'income', '<eos>', 'the', 'percent', 'veto', 'voted', 'to', 'spend', 'a', 'new', 'heavy', 'agreement', 'to', 'build', 'a', '<unk>', '<unk>', 'ally', 'that', 'actually', 'led', 'ms.', 'to', 'a', 'form']])
+('adv_sequences: ', [['of', 'sales', 'airlines', 'were', 'extremely', 'active', 'all', 'day', 'friday', 'reacting']])
+('is generate', True)
+('x: ', array([[   4,  561,  698,   46, 1975, 1026,   73,  272,  282, 6887]],
+      dtype=int32), 'x_prime: ', array([[   4,   81,  698,   46, 1975, 1026,   73,  272,  282, 6887]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['friday', 'merrill', 'lynch', '&', 'co', '<eos>', 'meanwhile',
+        'investor', 'watchers', "'"]], dtype='|S9'))
+('samples after adversarial attacks: ', [['to', 'assess', 'demand', 'for', 'government', 'personal', 'income', 'while', 'hong', 'kong', 'would', 'deliver', 'an', 'unprecedented', '<unk>', 'of', 'the', 'accelerate', '<eos>', 'but', 'there', 'often', 'involve', '#', 'N', 'million', 'and', 'nearly', 'just', 'health']])
+('hidden_state_c_1:', 0.16725)
+('------Step ', 44, '-------')
+('ori_sequences: ', [['to', 'news', 'and', 'rumors', 'about', 'the', 'proposed', '$', 'N', 'billion']])
+('next_batch_sequences: ', array([['leveraged', 'buy-outs', "'", 'share', 'of', 'europe', "'s",
+        'biggest', 'number', 'else']], dtype='|S9'))
+('ori_samples: ', [['payment', '<eos>', 'after', 'the', '$', 'N', 'million', 'in', 'loans', 'to', '<unk>', 'sales', '<eos>', 'in', 'new', 'york', 'stock', 'exchange', 'composite', 'trading', '<unk>', 'closed', 'at', 'N', 'canadian', 'cents', 'up', 'N', 'cent', 'the']])
+('adv_sequences: ', [['to', 'news', 'and', 'rate', 'about', 'the', 'proposed', '$', 'N', 'billion']])
+('is generate', True)
+('x: ', array([[   5,  310,    8, 1913,   43,    0,  498,   12,    3,   48]],
+      dtype=int32), 'x_prime: ', array([[  5, 310,   8, 158,  43,   0, 498,  12,   3,  48]], dtype=int32))
+('next_adv_batch_sequences = ', array([['bid', 'against', 'europe', 'officials', 'expect', 'strong',
+        'gains', 'totaling', 'c$', 'N']], dtype='|S9'))
+('samples after adversarial attacks: ', [['funds', 'are', 'discouraging', 'equipment', '<eos>', '\\*\\*', 'insulin', 'on', 'the', 'seasonally', 'run', '<eos>', '<unk>', 'guaranty', 'corp.', 'said', 'it', 'reached', 'an', 'agreement', 'to', 'acquire', 'its', 'appropriations', 'on', 'sept.', 'N', '<eos>', 'new', 'york']])
+('hidden_state_c_1:', 0.171)
+('------Step ', 45, '-------')
+('ori_sequences: ', [['buy-out', 'of', 'the', 'airline', 'by', 'an', '<unk>', 'group', '<eos>', 'wall']])
+('next_batch_sequences: ', array([['street', 'reacted', 'upward', 'friday', 'morning', 'from',
+        'bankruptcy', 'disaster', '&', 'spencer']], dtype='|S10'))
+('ori_samples: ', [['street', "'s", 'decision', 'may', 'have', 'kept', 'a', 'company', 'in', 'friday', '<eos>', 'in', 'the', 'early', '1970s', 'approach', 'by', 'the', 'N', 'federal', 'bureau', 'of', 'united', 'education', '&', 'many', 'industry', 'executives', '<eos>', 'the']])
+('adv_sequences: ', [['buy-out', 'of', 'san', 'airline', 'by', 'an', '<unk>', 'group', '<eos>', 'wall']])
+('is generate', True)
+('x: ', array([[588,   4,   0, 766,  17,  31,   1,  96,   2, 330]], dtype=int32), 'x_prime: ', array([[588,   4, 304, 766,  17,  31,   1,  96,   2, 330]], dtype=int32))
+('next_adv_batch_sequences = ', array([['street', 'reacted', 'heavily', 'over', 'whether', 'happened',
+        'until', 'weeks', 'ago', 'compared']], dtype='|S8'))
+('samples after adversarial attacks: ', [['street', 'officials', 'also', 'said', 'they', 'would', 'have', 'rose', 'about', 'N', 'feet', 'runs', 'or', 'competitive', 'supplies', 'at', 'the', 'well-known', 'N', 'when', 'he', 'hopeful', 'we', 'have', 'only', '<unk>', 'plate', 'but', 'few', 'gold']])
+('hidden_state_c_1:', 0.17475)
+('------Step ', 46, '-------')
+('ori_sequences: ', [['street', "'s", 'takeover-stock', 'speculators', 'or', 'risk', 'arbitragers', 'had', 'placed', 'unusually']])
+('next_batch_sequences: ', array([['thin', 'if', 'anyone', 'happens', 'offering', 'moves', 'come',
+        'from', 'lung', 'cancer']], dtype='|S8'))
+('ori_samples: ', [['heavy', 'amounts', 'into', 'the', 'partnership', 'but', 'the', 'present', 'neighborhood', '<eos>', 'columbia', 'has', 'received', 'a', 'smoking', '<unk>', 'trap', 'in', 'reality', 'and', 'received', 'no', 'heat', '<eos>', 'it', 'is', 'a', 'great', 'property', 'in']])
+('adv_sequences: ', [['street', "'s", 'takeover-stock', 'last', 'or', 'risk', 'arbitragers', 'had', 'placed', 'unusually']])
+('is generate', True)
+('x: ', array([[ 322,    9, 7705, 3201,   36,  646, 6036,   50, 1676, 4037]],
+      dtype=int32), 'x_prime: ', array([[ 322,    9, 7705,   69,   36,  646, 6036,   50, 1676, 4037]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['thin', 'if', 'necessary', 'ms.', 'bogart', "'s", 'departure',
+        'outstanding', 'ago', 'according']], dtype='|S11'))
+('samples after adversarial attacks: ', [['extension', '<eos>', 'the', 'talks', 'also', 'has', 'been', 'passed', 'in', 'comair', 'monsanto', 'agreed', 'to', 'settle', 'a', 'proposed', 'british', 'forest', 'mine', 'to', 'the', 'white', 'administration', '<unk>', 'a', '$', 'N', 'billion', 'with', 'marks']])
+('hidden_state_c_1:', 0.17725)
+('------Step ', 47, '-------')
+('ori_sequences: ', [['large', 'bets', 'that', 'a', 'takeover', 'would', 'succeed', 'and', 'ual', 'stock']])
+('next_batch_sequences: ', array([['pickers', 'say', 'whom', 'happened', 'to', 'date', 'ahead',
+        'reagan', 'wants', 'forward']], dtype='|S8'))
+('ori_samples: ', [['and', 'would', "n't", 'own', 'until', 'it', 'was', 'announced', 'at', 'the', 'level', 'of', 'still', 'universe', '<eos>', 'mr.', 'bebear', 'admits', 'courtaulds', "'s", '<unk>', 'the', '<unk>', 'immediately', 'reject', 'experimental', 'competition', '<eos>', 'the', 'first']])
+('adv_sequences: ', [['large', 'bets', 'that', 'a', 'takeover', 'would', 'succeed', 'and', 'such', 'stock']])
+('is generate', True)
+('x: ', array([[ 380, 9725,   10,    6,  422,   42, 2283,    8,  408,   60]],
+      dtype=int32), 'x_prime: ', array([[ 380, 9725,   10,    6,  422,   42, 2283,    8,   88,   60]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['prices', 'rebounded', 'friday', 'afternoon', 's&p', 'N',
+        'million', 'swiss', 'parent', 'group']], dtype='|S9'))
+('samples after adversarial attacks: ', [['a', 'nation', '<eos>', 'the', 'market', 'approval', 'will', 'be', 'disrupted', 'as', 'part', 'of', 'the', 'firms', '<eos>', 'but', 'the', 'government', "'s", 'effort', 'to', 'plead', 'guilty', 'to', 'his', 'college', '<eos>', 'the', 'worst', 'were']])
+('hidden_state_c_1:', 0.18025)
+('------Step ', 48, '-------')
+('ori_sequences: ', [['would', 'rise', '<eos>', 'at', 'N', 'p.m.', 'edt', 'came', 'the', '<unk>']])
+('next_batch_sequences: ', array([['anniversary', 'of', 'monetary', 'policy', 'issued',
+        'comparable', 'fe', 'broadcasting', 'corp.', 'minneapolis']],
+      dtype='|S12'))
+('ori_samples: ', [['loss', 'came', 'after', 'a', 'N', 'N', 'announcing', 'the', 'level', 'of', 'N', 'square', 'camps', '<eos>', 'the', 'prime', 'minister', "'s", '<unk>', 'was', 'restricted', 'to', '<unk>', 'were', '<unk>', 'in', 'west', 'germany', '<eos>', 'he']])
+('adv_sequences: ', [['would', 'rise', '<eos>', 'at', 'N', 'between', 'edt', 'came', 'the', '<unk>']])
+('is generate', True)
+('x: ', array([[  42,  497,    2,   18,    3, 2162, 4809,  544,    0,    1]],
+      dtype=int32), 'x_prime: ', array([[  42,  497,    2,   18,    3,  178, 4809,  544,    0,    1]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['anniversary', 'consisting', 'of', 'their', 'own', 'account',
+        'inc.', 'peabody', '&', 'mather']], dtype='|S11'))
+('samples after adversarial attacks: ', [['he', 'was', '<unk>', 'requiring', 'a', 'response', 'N', 'N', '<unk>', 'in', 'the', 'second', 'files', '<eos>', '<unk>', "'s", 'chairmen', 'require', 'a', 'further', '<unk>', '<unk>', 'plant', '<eos>', 'the', 'two', 'main', 'projects', 'had', 'been']])
+('hidden_state_c_1:', 0.18325)
+('------Step ', 49, '-------')
+('ori_sequences: ', [['news', 'the', 'big', 'board', 'was', '<unk>', 'trading', 'in', 'ual', 'pending']])
+('next_batch_sequences: ', array([['weakness', 'that', 'invest', 'rates', 'tend', 'to', 'be',
+        'resolved', 'unless', 'blacks']], dtype='|S8'))
+('ori_samples: ', [['morgan', 'stanley', "'s", 'news', 'plan', 'which', 'remain', 'materialized', 'and', 'by', 'the', 'commission', 'and', 'said', 'fred', '<unk>', 'director', 'of', 'the', 'manufacturers', 'of', 'canadian', '<unk>', 'the', 'group', "'s", '<unk>', 'business', 'for', 'race']])
+('adv_sequences: ', [['news', 'the', 'big', 'board', 'was', 'more', 'trading', 'in', 'ual', 'pending']])
+('is generate', True)
+('x: ', array([[ 310,    0,  129,  146,   24,    1,   76,    7,  408, 1502]],
+      dtype=int32), 'x_prime: ', array([[ 310,    0,  129,  146,   24,   45,   76,    7,  408, 1502]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['speculation', 'that', 'happened', 'amid', 'capitol', 'hill',
+        'president', 'carlos', 'sugarman', 'd.']], dtype='|S11'))
+('samples after adversarial attacks: ', [['competition', 'from', 'a', 'corporate', 'federal', 'reserve', 'bank', 'of', 'rothschild', 'for', '$', 'N', 'billion', 'and', 'government', 'debt', 'a', '<unk>', 'of', 'just', '$', 'N', 'million', 'in', 'its', 'contract', 'with', '<unk>', 'on', 'a']])
+('hidden_state_c_1:', 0.1845)
+('------Step ', 50, '-------')
+('ori_sequences: ', [['news', '<eos>', 'on', 'the', 'exchange', 'floor', 'as', 'soon', 'as', 'ual']])
+('next_batch_sequences: ', array([['bought', 'up', 'N', 'cents', 'per', 'ton', 'called', 'warner',
+        'motor', 'co']], dtype='|S6'))
+('ori_samples: ', [['<unk>', 'savings', 'bank', 'and', '<unk>', 'the', 'number', 'of', 'branches', 'in', 'the', 'u.s.', '<eos>', 'the', 'new', 'york', 'expired', 'hit', 'a', 'low', '<unk>', '<eos>', 'aids', 'devices', 'also', 'could', 'pose', 'such', 'a', 'huge']])
+('adv_sequences: ', [['news', '<eos>', 'such', 'the', 'exchange', 'floor', 'as', 'soon', 'as', 'ual']])
+('is generate', True)
+('x: ', array([[ 310,    2,   16,    0,  111, 1013,   19,  640,   19,  408]],
+      dtype=int32), 'x_prime: ', array([[ 310,    2,   88,    0,  111, 1013,   19,  640,   19,  408]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['burnham', 'lambert', 'inc.', 'minneapolis', 'says', 'adding',
+        'us', 'familiar', 'with', 'program']], dtype='|S11'))
+('samples after adversarial attacks: ', [['a', 'different', 'real', 'estate', 'investment', '<eos>', 'a', 'spokesman', 'for', 'simpson', 'is', '<unk>', 'calif.', '<unk>', '<unk>', '&', '<unk>', 'a', 'team', 'of', 'the', '<unk>', '<eos>', 'an', '<unk>', 'attitude', 'is', '<unk>', 'down', 'not']])
+('hidden_state_c_1:', 0.187)
+('------Step ', 51, '-------')
+('ori_sequences: ', [['stopped', 'trading', 'we', '<unk>', 'for', 'a', 'panic', 'said', 'one', 'top']])
+('next_batch_sequences: ', array([['vice', 'minister', 'r.', 'rica', 'filed', 'suit', 'seeking',
+        'rape', 'victims', 'of']], dtype='|S8'))
+('ori_samples: ', [['close', 'to', 'the', '<unk>', 'of', 'the', '<unk>', 'computer', '<eos>', 'as', 'well', 'as', 'the', '<unk>', 'law', 'banks', '<unk>', 'their', 'developments', 'from', 'personnel', '<unk>', 'and', 'communications', 'stations', '<eos>', 'the', 'play', 'made', 'a']])
+('adv_sequences: ', [['stopped', 'trading', 'we', '<unk>', 'for', 'very', 'panic', 'said', 'one', 'top']])
+('is generate', True)
+('x: ', array([[1884,   76,   64,    1,   11,    6, 3912,   15,   54,  524]],
+      dtype=int32), 'x_prime: ', array([[1884,   76,   64,    1,   11,  252, 3912,   15,   54,  524]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['vice', 'president', 'subsidiary', "'s", 'role', 'in',
+        'anticipation', 'of', 'rape', 'incest']], dtype='|S12'))
+('samples after adversarial attacks: ', [['executives', 'at', 'the', 'helm', 'of', 'this', 'country', '<eos>', 'but', 'some', 'of', 'these', 'banks', 'could', 'use', 'businesses', 'such', 'as', '<unk>', '<unk>', 'investment', 'agents', 'duff', '&', 'mengistu', 'and', 'were', 'taken', 'into', 'the']])
+('hidden_state_c_1:', 0.19)
+('------Step ', 52, '-------')
+('ori_sequences: ', [['floor', 'trader', '<eos>', 'several', 'traders', 'could', 'be', 'seen', 'shaking', 'their']])
+('next_batch_sequences: ', array([['highest', 'percentage', 'point', 'between', 'bush', 'conn.',
+        'have', 'been', 'reluctant', 'comparable']], dtype='|S10'))
+('ori_samples: ', [['<unk>', 'as', '<unk>', 'battle', '<eos>', 'mr.', 'engelken', 'came', 'before', 'her', '<unk>', 'friend', 'was', 'denied', 'that', 'her', 'husband', 'has', 'been', 'a', '<unk>', 'attack', 'such', 'as', 'david', 'major', 'company', '<eos>', 'mr.', '<unk>']])
+('adv_sequences: ', [['floor', 'trader', '<eos>', 'limited', 'traders', 'could', 'be', 'seen', 'shaking', 'their']])
+('is generate', True)
+('x: ', array([[1013, 1280,    2,  248,  280,   79,   25,  919, 6945,   51]],
+      dtype=int32), 'x_prime: ', array([[1013, 1280,    2,  790,  280,   79,   25,  919, 6945,   51]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['ability', 'to', 'obtain', 'additional', 'investments', 'abroad',
+        'else', 'might', 'result', 'friday']], dtype='|S11'))
+('samples after adversarial attacks: ', [['vicious', '<unk>', '$', 'N', 'and', 'its', 'suspend', 'opposition', '19th', 'by', 'pork-barrel', 'tools', 'potatoes', 'canada', 'funding', 'co.', 'and', '<unk>', '<unk>', 'corp.', 'agreed', 'to', 'buy', 'commercial', 'banks', 'to', 'close', 'each', 'share', '<eos>']])
+('hidden_state_c_1:', 0.19275)
+('------Step ', 53, '-------')
+('ori_sequences: ', [['heads', 'when', 'the', 'news', '<unk>', '<eos>', 'for', 'weeks', 'the', 'market']])
+('next_batch_sequences: ', array([['seems', "n't", 'aware', 'of', 'anything', "'", 'portfolios',
+        'although', 'others', 'prefer']], dtype='|S10'))
+('ori_samples: ', [['has', 'the', 'moderate', 'loss', 'wednesday', 'and', 'thus', 'sustain', 'its', 'demand', 'for', '<unk>', 'lines', 'inc.', '<unk>', 's&ls', 'that', 'import', 'competition', 'within', 'passenger', '<eos>', 'the', 'first', 'half', 'of', 'this', 'year', 'comes', '$']])
+('adv_sequences: ', [['heads', 'so', 'the', 'news', '<unk>', '<eos>', 'for', 'weeks', 'the', 'market']])
+('is generate', True)
+('x: ', array([[2531,   67,    0,  310,    1,    2,   11,  421,    0,   47]],
+      dtype=int32), 'x_prime: ', array([[2531,  105,    0,  310,    1,    2,   11,  421,    0,   47]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['reacted', 'forward', 'into', 'paris', 'street', 'co.',
+        'goldman', 'sachs', '&', 'co.']], dtype='|S7'))
+('samples after adversarial attacks: ', [['good', 'news', 'has', 'reduced', 'a', 'tax', 'number', 'by', 'selling', 'tax', 'producers', '<eos>', 'b.a.t', 'plc', 'a', 'chancellor', 'of', 'japan', "'s", 'south', 'african', 'lead', 'reform', 'once', '<unk>', 'to', 'keep', 'the', 'forces', 'on']])
+('hidden_state_c_1:', 0.19525)
+('------Step ', 54, '-------')
+('ori_sequences: ', [['had', 'been', 'nervous', 'about', 'takeovers', 'after', 'campeau', 'corp.', "'s", 'cash']])
+('next_batch_sequences: ', array([['flow', 'date', 'last', 'month', 'when', 'it', 'reaches',
+        'himself', "'", 'intention']], dtype='|S9'))
+('ori_samples: ', [['flow', 'for', 'two', 'years', 'least', 'an', 'error', 'by', 'a', 'group', 'of', 'properties', '<unk>', "'s", 'investment', 'banker', 'with', 'investors', 'either', '<eos>', 'she', 'typically', 'is', '<unk>', 'as', 'much', 'as', 'three', 'times', 'seven']])
+('adv_sequences: ', [['had', 'been', 'nervous', 'about', 'mr.', 'after', 'campeau', 'corp.', "'s", 'cash']])
+('is generate', True)
+('x: ', array([[  50,   58, 3112,   43, 3270,   78, 1679,   65,    9,  267]],
+      dtype=int32), 'x_prime: ', array([[  50,   58, 3112,   43,   23,   78, 1679,   65,    9,  267]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['flow', 'date', '<eos>', 'moreover', 'competitors', 'caution',
+        'effect', 'down', '#', 'N']], dtype='|S11'))
+('samples after adversarial attacks: ', [['flow', 'from', 'federated', 'paper', 'co.', "'s", 'french', 'oil', 'business', '<eos>', 'the', 'headquarters', 'has', 'a', 'factor', 'in', 'operating', 'value', 'and', 'essentially', 'N', 'million', 'shares', 'utilities', 'with', 'N', 'million', 'stocks', 'in', 'the']])
+('hidden_state_c_1:', 0.19875)
+('------Step ', 55, '-------')
+('ori_sequences: ', [['crunch', 'spurred', 'concern', 'about', 'the', 'prospects', 'for', 'future', 'highly', 'leveraged']])
+('next_batch_sequences: ', array([['buy-outs', 'who', 'participated', 'heavily', 'on', 'behalf',
+        'of', 'rape', 'incest', 'inc.']], dtype='|S12'))
+('ori_samples: ', [['options', '<eos>', 'the', 'bonds', 'buys', 'monday', "'s", 'almost', 'N', 'N', 'of', 'its', 'value', 'monday', 'in', 'an', 'hour', 'to', 'report', 'bill', 'redemption', 'of', 'the', 'upper', 'section', 'of', 'the', 'federal', 'deposit', 'insurance']])
+('adv_sequences: ', [['crunch', 'according', 'concern', 'about', 'the', 'prospects', 'for', 'future', 'highly', 'leveraged']])
+('is generate', True)
+('x: ', array([[4663, 5906,  288,   43,    0, 2170,   11,  507, 1328, 1145]],
+      dtype=int32), 'x_prime: ', array([[4663,  214,  288,   43,    0, 2170,   11,  507, 1328, 1145]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['buy-outs', 'inc', '<eos>', 'moreover', 'compaq', 'computer',
+        'co.', 'menlo', 'park', 'contributed']], dtype='|S11'))
+('samples after adversarial attacks: ', [['business', '<eos>', 'you', "'ll", 'put', 'some', 'market', 'executives', 'said', 'japanese', 'investors', 'already', 'will', 'imagine', 'new', 'fed', 'or', 'any', 'other', 'bidding', 'war', 'drexel', "'s", 'strategy', 'largely', '<unk>', 'and', 'a', '<unk>', 'at']])
+('hidden_state_c_1:', 0.2015)
+('------Step ', 56, '-------')
+('ori_sequences: ', [['takeovers', '<eos>', 'and', 'N', 'minutes', 'after', 'the', 'ual', 'trading', 'halt']])
+('next_batch_sequences: ', array([['held', 'up', 'again', 'morning', 'points', 'above', 'those',
+        'sectors', "'", 'ability']], dtype='|S7'))
+('ori_samples: ', [['in', 'exchange', 'prices', 'on', 'active', 'trading', 'until', '<eos>', 'unable', 'to', 'file', 'thousands', 'of', 'precious', 'answers', 'for', 'comment', 'an', 'store', 'money', 'manager', '<eos>', 'ford', 'newark', 'the', 'venture', 'as', 'of', 'a.', '<unk>']])
+('adv_sequences: ', [['takeovers', '<eos>', 'and', 'N', 'by', 'after', 'the', 'ual', 'trading', 'halt']])
+('is generate', True)
+('x: ', array([[3270,    2,    8,    3, 1496,   78,    0,  408,   76, 2664]],
+      dtype=int32), 'x_prime: ', array([[3270,    2,    8,    3,   17,   78,    0,  408,   76, 2664]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['held', 'up', 'to', 'accommodate', 'those', 'trends', 'over',
+        'whether', 'hungary', "'s"]], dtype='|S11'))
+('samples after adversarial attacks: ', [['after', 'it', "'s", 'almost', 'a', 'major', 'aim', 'of', 'being', 'unnecessary', 'than', 'should', 'be', 'good', '<eos>', 'it', 'does', "n't", 'mean', 'we', 'tell', 'you', 'you', 'will', 'easily', 'get', 'out', 'of', 'the', 'financing']])
+('hidden_state_c_1:', 0.20425)
+('------Step ', 57, '-------')
+('ori_sequences: ', [['came', 'news', 'that', 'the', 'ual', 'group', 'could', "n't", 'get', 'financing']])
+('next_batch_sequences: ', array([['for', 'instance', 'than', 'ever', 'else', 'than', 'they', "'re",
+        'hopeful', 'about']], dtype='|S8'))
+('ori_samples: ', [['<eos>', 'in', 'the', 'weeks', 'the', 'editor', 'can', 'just', 'knocked', 'two', '<unk>', 'software', 'action', 'until', 'they', "'d", 'receive', '<unk>', 'and', '<unk>', 'through', 'congress', '<eos>', 'some', 'fast-food', 'specialists', 'say', 'hedging', 'technology', 'units']])
+('adv_sequences: ', [['came', 'qintex', 'that', 'the', 'ual', 'group', 'could', "n't", 'get', 'financing']])
+('is generate', True)
+('x: ', array([[544, 310,  10,   0, 408,  96,  79,  32, 187, 604]], dtype=int32), 'x_prime: ', array([[ 544, 1242,   10,    0,  408,   96,   79,   32,  187,  604]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['until', 'january', 'cents', 'payable', 'jan.', 'N',
+        'protection', 'corp.', 'consisting', 'of']], dtype='|S10'))
+('samples after adversarial attacks: ', [['<eos>', 'it', "'s", 'question', 'whether', 'display', 'works', 'like', 'the', 'damage', 'was', 'reject', 'this', 'way', '<eos>', 'still', 'that', 'could', 'be', '<unk>', 'but', 'could', 'proceed', 'a', 'person', "'s", 'near-term', 'offer', '<eos>', 'that']])
+('hidden_state_c_1:', 0.20725)
+('------Step ', 58, '-------')
+('ori_sequences: ', [['for', 'its', 'bid', '<eos>', 'at', 'this', 'point', 'the', 'dow', 'was']])
+('next_batch_sequences: ', array([['quoted', 'late', 'dec.', 'N', 'page-one', 'jr.', 'inc.',
+        'nashua', 'operates', 'chapter']], dtype='|S8'))
+('ori_samples: ', [['$', 'N', 'the', 'week', 'before', '<eos>', 'mr.', '<unk>', 'has', 'been', '<unk>', 'with', 'mrs.', 'ward', 'for', 'greater', 'than', 'a', 'cost', 'of', 'N', '<eos>', 'but', 'he', 'added', 'is', 'not', 'always', 'some', 'of']])
+('adv_sequences: ', [['for', 'its', 'bid', '<eos>', 'at', 'estimated', 'point', 'the', 'dow', 'was']])
+('is generate', True)
+('x: ', array([[ 11,  27, 257,   2,  18,  39, 374,   0, 447,  24]], dtype=int32), 'x_prime: ', array([[ 11,  27, 257,   2,  18, 452, 374,   0, 447,  24]], dtype=int32))
+('next_adv_batch_sequences = ', array([['quoted', 'late', 'dec.', 'N', 'point', 'higher', 'than',
+        'usual', 'me', 'how']], dtype='|S6'))
+('samples after adversarial attacks: ', [['down', 'N', 'point', 'was', 'a', 'news', 'participant', 'in', 'charge', 'of', 'investment', 'and', 'marketing', 'for', 'legislative', 'commercial', '<unk>', 'products', '<eos>', 'they', 'made', 'union', 'economic', 'and', '<unk>', 'work', 'gives', 'no', 'one', 'a']])
+('hidden_state_c_1:', 0.20925)
+('------Step ', 59, '-------')
+('ori_sequences: ', [['down', 'about', 'N', 'points', '<eos>', 'the', 'market', '<unk>', '<eos>', 'arbitragers']])
+('next_batch_sequences: ', array([['agree', "n't", 'veto', 'goods', 'than', 'whites', 'billion',
+        'guarantees', 'indicates', 'third-quarter']], dtype='|S13'))
+('ori_samples: ', [['were', 'assured', 'by', 'west', 'expectations', 'that', 'china', "'s", 'foreign', 'staff', 'has', 'caused', 'some', 'changes', 'in', 'national', 'trade', '<eos>', 'shippers', 'increased', 'from', 'N', 'N', 'for', '$', 'N', 'a', 'year', 'to', '$']])
+('adv_sequences: ', [['down', 'about', 'N', 'points', '<eos>', 'the', 'market', 'mr.', '<eos>', 'arbitragers']])
+('is generate', True)
+('x: ', array([[ 118,   43,    3,  394,    2,    0,   47,    1,    2, 6036]],
+      dtype=int32), 'x_prime: ', array([[ 118,   43,    3,  394,    2,    0,   47,   23,    2, 6036]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([['agree', 'that', 'europe', 'might', 'introduce', 'up',
+        'treatment', 'requirements', 'for', 'poor']], dtype='|S12'))
+('samples after adversarial attacks: ', [['know', 'that', 'the', 'good', 'worldwide', 'number', 'are', 'pending', 'from', 'soviet', 'investment', 'in', '<unk>', 'calif.', 'stock', 'and', 'last', 'month', "'s", 'index', 'price', '<eos>', 'moreover', 'the', 'reserve', 'is', 'a', 'base', 'of', 'time']])
+('hidden_state_c_1:', 0.2115)
+('------Step ', 60, '-------')
+('ori_sequences: ', [['could', "n't", 'dump', 'their', 'ual', 'stock', 'but', 'they', 'rid', 'themselves']])
+('next_batch_sequences: ', array([["'", 'prospects', 'for', 'example', 'types', 'of', 'occasions',
+        'ago', 'warner', 'communications']], dtype='|S14'))
+('ori_samples: ', [['face', 'a', 'volatile', 'role', 'in', 'the', 'stock', "'s", 'financial', 'condition', '<eos>', 'the', 'stock', 'market', "'s", 'volatility', 'said', 'it', 'calls', 'the', 'nasdaq', 'trading', 'disruption', '<eos>', 'N', 'N', 'ford', 'finished', 'higher', 'short-term']])
+('adv_sequences: ', [['could', "n't", 'dump', 'their', 'ual', 'stock', 'but', 'stock', 'rid', 'themselves']])
+('is generate', True)
+('x: ', array([[  79,   32, 5262,   51,  408,   60,   29,   38, 5859,  872]],
+      dtype=int32), 'x_prime: ', array([[  79,   32, 5262,   51,  408,   60,   29,   60, 5859,  872]],
+      dtype=int32))
+('next_adv_batch_sequences = ', array([["'", 'prospects', 'for', 'months', 'else', 'including', '$', 'N',
+        'million', 'annually']], dtype='|S9'))
+('samples after adversarial attacks: ', [['could', 'be', '<unk>', 'up', '<eos>', '<unk>', 'gained', 'N', 'to', 'N', 'N', '<eos>', 'food', 'was', 'also', '<unk>', 'by', 'a', '<unk>', 'man', 'but', 'it', "'s", 'a', 'helpful', 'benefit', '<unk>', 'at', 'the', 'obvious']])
+('hidden_state_c_1:', 0.215)
+save success
+('Run time: ', 281.357331)
+save 2_state_diff_hidden_state_adv_1555410266.csvsuccessfully
