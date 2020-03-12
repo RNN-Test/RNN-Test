@@ -358,6 +358,7 @@ def neuron_selection_random(num_neurons, guided_coverage, h_states_all, c_states
     return neurons_tensor  # , neurons_list
 
 
+# select states to boost, default way
 def neuron_selection(num_neurons, guided_coverage, h_states_all, c_states_all, h_states_all_value,
                      c_states_all_value):
     neurons_tensor = 0
