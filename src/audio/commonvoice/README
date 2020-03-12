@@ -1,0 +1,3 @@
+These are the first 100 samples from the Common Voice test set
+(http://voice.mozilla.org/), along with their labels. We use
+them for generating audio adversarial examples.
