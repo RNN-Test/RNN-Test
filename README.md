@@ -4,8 +4,7 @@ RNN-Test: Generic Adversarial Testing Framework for Recurrent Neural Network Sys
 This repository provides the source code of RNN-Test, example adversarial inputs for three models and figures not listed in the paper, mainly for the reproducibility. The code space is rough now and will be maintained continously.
 
 ## Description
-RNN-Test is a generic adversarial testing framework for Recurrent Neural Network Systems(RNN), which could be adopted for variants of RNN models. Here, we evaluate on three RNN models, which are PTB language model, spell checker model and DeepSpeech ASR model. [PTB language model](https://github.com/nelken/tf) is a well known language model, basically to generate subsequent texts taking previous texts as input. [Spell checker model](https://github.com/
-Currie32/Spell-Checker/) is one of the widespread seq2seq models in NLP tasks, which receives a sentence with spelling mistakes as input and outputs the sentence with the mistakes corrected. [DeepSpeech ASR model](https://github.com/mozilla/DeepSpeech/) is a state-of-the-art speech-to-text RNN model, which is employed in lots of security-critical scenarios.
+RNN-Test is a generic adversarial testing framework for Recurrent Neural Network Systems(RNN), which could be adopted for variants of RNN models. Here, we evaluate on three RNN models, which are PTB language model, spell checker model and DeepSpeech ASR model. [PTB language model](https://github.com/nelken/tf) is a well known language model, basically to generate subsequent texts taking previous texts as input. [Spell checker model](https://github.com/Currie32/Spell-Checker/) is one of the widespread seq2seq models in NLP tasks, which receives a sentence with spelling mistakes as input and outputs the sentence with the mistakes corrected. [DeepSpeech ASR model](https://github.com/mozilla/DeepSpeech/) is a state-of-the-art speech-to-text RNN model, which is employed in lots of security-critical scenarios.
 
 ### Repository structure
 In terms of this repository, it composes three main parts. The file structure is listed as below.
@@ -99,9 +98,9 @@ In terms of this repository, it composes three main parts. The file structure is
 
 
 ## Dependencies
-###Dependencies for code space of all the models:
+### Dependencies for code space of all the models:
 
-###Other dependencies:
+### Other dependencies:
 1. For PTB language model and spell checker model
 Python 2.7
 
