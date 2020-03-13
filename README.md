@@ -100,20 +100,57 @@ In terms of this repository, it composes three main parts. The file structure is
 ```
 
 ## Dependencies
-### Dependencies for code space of all the models:
+These libraries could be installed with pip or conda.
+### Dependencies for code space of all the models
+numpy
+matplotlib
+scipy
+pandas
+nltk
+Levenshtein
 
-### Other dependencies:
+### Other dependencies
 1. For PTB language model and spell checker model
 Python 2.7
+tensorflow(1.3.0)
 
 2. For DeepSpeech ASR model
 Python 3.5/3.6
+tensorflow 1.8
 DeepSpeech 0.1.1
+python_speech_features
 
 ## To run the models
+### Running configuration
+python gen_adv_exp.py  --objective <objective>
+                       --objective1 <objective1>
+                       --guided_coverage <guided_coverage>
+                       --exp <exp>
+where,
+objective: the modules leveraged to test
+    could be {0, 1, 2}, refers to pure adversary search module, pure coverage boosting module and joint modules, respectively.
+objective1: the search method used in adversary search module.
+    could be {state_diff, cost, diff}, refers to RNN-Test, FGSM-based and DLFuzz-based, respectively.
+guided_coverage: the coverage metrics used in coverage boosting module.
+    could be {hidden_state, cell_state, DX}, refers to hidden state coverage, cell state coverage and neuron coverage, respectively.
+exp: whether to adversarial testing or random testing
+    could be {adv, baseline}, refers to adversarial testing methods or random testing method.
+
+### exanple comands to run
 1. For PTB language model
+    python gen_adv_exp.py --data_path=./testdata/ --objective 2 --objective1 state_diff --guided_coverage hidden_state --exp adv
 
 2. For spell checker model
+    python gen_adv_exp.py --objective 2 --objective1 cost --guided_coverage cell_state --exp adv
 
 3. For DeepSpeech ASR model
+The model file has not been given here, need to extract first. The steps are the same as https://github.com/carlini/audio_adversarial_examples, listed below:
+    cd src/audio
+    git clone https://github.com/mozilla/DeepSpeech.git
+    (cd DeepSpeech; git checkout tags/v0.1.1)
+    wget https://github.com/mozilla/DeepSpeech/releases/download/v0.1.0/deepspeech-0.1.0-models.tar.gz
+    tar -xzf deepspeech-0.1.0-models.tar.gz
+    python3 make_checkpoint.py
 
+Then run the model:
+    python gen_adv_exp.py --objective 2 --objective1 state_diff --guided_coverage cell_state --exp adv
