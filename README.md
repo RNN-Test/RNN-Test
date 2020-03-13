@@ -8,6 +8,8 @@ RNN-Test is a generic adversarial testing framework for Recurrent Neural Network
 
 ### Repository structure
 In terms of this repository, it composes three main parts. The file structure is listed as below.
+
+```bash
 |-- RNN-Test
     |-- README.md 
     |-- src                                                       //Source code, including the model to test
@@ -95,7 +97,7 @@ In terms of this repository, it composes three main parts. The file structure is
                 |   |-- ...
                 |-- sp                                            //similar as above
                     |-- ...
-
+```
 
 ## Dependencies
 ### Dependencies for code space of all the models:
