@@ -105,7 +105,7 @@ def run_adv(session, model, inverseDictionary, data, eval_op, csv_filename, verb
             objective = objective1 + objective2
         else:
             objective = 0
-            print 'Invalid input.  0 for objective1, 1 for objective2, 2 for objective1 + objective2'
+            print('Invalid input.  0 for objective1, 1 for objective2, 2 for objective1 + objective2')
         print("getting grads")
         grads = tf.gradients(objective, model.inputs)
 
@@ -776,7 +776,7 @@ def test():
                 writer.writerow(['Test Perplexity after adversarial attacks', test_perplexity_adv])
                 writer.writerow(['Generation Rate', generate_rate])
 
-        print 'save '+csv_filename + 'successfully'
+        print('save '+csv_filename + 'successfully')
 
 
 if __name__ == "__main__":
