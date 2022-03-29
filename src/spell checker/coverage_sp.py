@@ -111,7 +111,7 @@ def gate_coverage(gates_all, inputs, max_sen_length=None):
     gates_all = gates_all.swapaxes(1, 3)  # layers, steps+1, batch, fw_bw, rnn_size
     inputs = inputs.swapaxes(0, 2)  # steps, batch, fw_bw, embedding
 
-    units = (embedding + r_size) / 4
+    units = (embedding + r_size) // 4
     # store the values of each time
     # input_gate_all = np.zeros([layers, steps - 1, batch, fw_bw, units])
     input_gate_all = np.zeros([steps - 1, layers, batch, fw_bw, units])
@@ -272,7 +272,7 @@ def neuron_selection(num_neurons, guided_coverage, h_states_all, c_states_all, h
             neurons_list.append(h_states_tensors[nid])
 
     elif guided_coverage == "cell_state":
-        lower_neurons = num_neurons / 2
+        lower_neurons = num_neurons // 2
         higher_neurons = num_neurons - lower_neurons
         c_all = c_states_all_value.flatten()
 
@@ -306,7 +306,7 @@ def neuron_selection(num_neurons, guided_coverage, h_states_all, c_states_all, h
             neurons_list.append(c_states_tensors[hn_id])
 
     elif guided_coverage in ["forget_gate", "output_gate"]:
-        lower_neurons = num_neurons / 2
+        lower_neurons = num_neurons // 2
         higher_neurons = num_neurons - lower_neurons
 
         h_all = h_states_all_value.flatten()
@@ -390,7 +390,7 @@ def neuron_selection_random(num_neurons, guided_coverage, h_states_all, c_states
         c_higher_records = np.array(cell_state_records[:, 0:seq_length, :, len(tanh_sections) - 1]).flatten()
 
         # randomly sample uncovered neurons to cover
-        lower_neurons = num_neurons / 2
+        lower_neurons = num_neurons // 2
         lower_neurons_to_cover = sample_neurons(c_lower_records, lower_neurons)
 
         higher_neurons = num_neurons - lower_neurons
@@ -461,7 +461,7 @@ def neuron_selection_random(num_neurons, guided_coverage, h_states_all, c_states
         fg_lower_records = np.array(forget_gate_records[0:seq_length, :, 0]).flatten()
         fg_higher_records = np.array(forget_gate_records[0:seq_length, :, len(sigmoid_sections) - 1]).flatten()
 
-        lower_neurons = num_neurons / 2
+        lower_neurons = num_neurons // 2
         higher_neurons = num_neurons - lower_neurons
 
         lower_neurons_to_cover = sample_neurons(fg_lower_records, lower_neurons)
@@ -490,14 +490,14 @@ def neuron_selection_random(num_neurons, guided_coverage, h_states_all, c_states
         og_lower_records = np.array(output_gate_records[0:seq_length, :, 0]).flatten()
         og_higher_records = np.array(output_gate_records[0:seq_length, :, len(sigmoid_sections) - 1]).flatten()
 
-        lower_neurons = num_neurons / 2
+        lower_neurons = num_neurons // 2
         higher_neurons = num_neurons - lower_neurons
 
         lower_neurons_to_cover = sample_neurons(og_lower_records, lower_neurons)
         higher_neurons_to_cover = sample_neurons(og_higher_records, higher_neurons)
 
         e_num = np.array(output_gate_records).shape[1]
-        unit_size = (embedding_size + rnn_size) / 2
+        unit_size = (embedding_size + rnn_size) // 2
         h_states_tensors = tf.transpose(h_states_all, perm=[3, 0, 2, 1, 4])
         h_states_tensors = tf.reshape(h_states_tensors, [-1])
         for index, ln_id in enumerate(lower_neurons_to_cover):

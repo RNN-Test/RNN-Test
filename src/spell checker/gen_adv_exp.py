@@ -132,7 +132,7 @@ def run_exp(sess, model, texts, targets, csv_filename):
                                                 rnn_outputs)
                     objective = objective1
                 elif FLAGS.objective == 1:
-                    num_neurons = len(text) / FLAGS.times_nn
+                    num_neurons = len(text) // FLAGS.times_nn
                     print("num_neurons: ", num_neurons)
                     objective2, neurons_list = neuron_selection(num_neurons, guided_coverage, h_states_all, c_states_all,
                                                                 h_states_all_value,
@@ -142,7 +142,7 @@ def run_exp(sess, model, texts, targets, csv_filename):
                 elif FLAGS.objective == 2:
                     objective1 = get_objective1(model, step_index, h_states_all, c_states_all, model.rnn_outputs,
                                                 rnn_outputs)
-                    num_neurons = len(text) / FLAGS.times_nn
+                    num_neurons = len(text) // FLAGS.times_nn
                     objective2, neurons_list = neuron_selection(num_neurons, guided_coverage, h_states_all, c_states_all,
                                                                 h_states_all_value,
                                                                 c_states_all_value, len(text))
@@ -778,7 +778,7 @@ def test():
             writer.writerow(['Generation Rate', generate_rate])
             writer.writerow(['Generation Guided Rate', generation_guided_rate])
 
-        print 'save ' + csv_filename + 'successfully'
+        print('save ' + csv_filename + 'successfully')
 
 
 if __name__ == "__main__":
