@@ -101,19 +101,16 @@ In terms of this repository, it composes three main parts. The file structure is
 
 ## Dependencies
 These libraries could be installed with pip or conda.
-### Dependencies for code space of all the models
++ Python 3.5/3.6
++ tensorflow 1.8
++ DeepSpeech 0.1.1 (for DeepSpeech ASR model)
++ python_speech_features (for DeepSpeech ASR model)
 + numpy
 + matplotlib
 + scipy
 + pandas
 + nltk
 + Levenshtein
-
-### Other dependencies
-+ Python 3.5/3.6
-+ tensorflow 1.8
-+ DeepSpeech 0.1.1
-+ python_speech_features
 
 ## To run the models
 ### Running configuration
